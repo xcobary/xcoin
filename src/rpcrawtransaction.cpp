@@ -6,7 +6,7 @@
 #include <boost/assign/list_of.hpp>
 
 #include "base58.h"
-#include "freicoinrpc.h"
+#include "xrpc.h"
 #include "db.h"
 #include "init.h"
 #include "main.h"
@@ -38,7 +38,7 @@ void ScriptPubKeyToJSON(const CScript& scriptPubKey, Object& out)
 
     Array a;
     BOOST_FOREACH(const CTxDestination& addr, addresses)
-        a.push_back(CFreicoinAddress(addr).ToString());
+        a.push_back(CXcoinAddress(addr).ToString());
     out.push_back(Pair("addresses", a));
 }
 
@@ -156,15 +156,15 @@ Value listunspent(const Array& params, bool fHelp)
     if (params.size() > 1)
         nMaxDepth = params[1].get_int();
 
-    set<CFreicoinAddress> setAddress;
+    set<CXcoinAddress> setAddress;
     if (params.size() > 2)
     {
         Array inputs = params[2].get_array();
         BOOST_FOREACH(Value& input, inputs)
         {
-            CFreicoinAddress address(input.get_str());
+            CXcoinAddress address(input.get_str());
             if (!address.IsValid())
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Freicoin address: ")+input.get_str());
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Xcoin address: ")+input.get_str());
             if (setAddress.count(address))
                 throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+input.get_str());
            setAddress.insert(address);
@@ -244,12 +244,12 @@ Value createrawtransaction(const Array& params, bool fHelp)
         rawTx.vin.push_back(in);
     }
 
-    set<CFreicoinAddress> setAddress;
+    set<CXcoinAddress> setAddress;
     BOOST_FOREACH(const Pair& s, sendTo)
     {
-        CFreicoinAddress address(s.name_);
+        CXcoinAddress address(s.name_);
         if (!address.IsValid())
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Freicoin address: ")+s.name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Xcoin address: ")+s.name_);
 
         if (setAddress.count(address))
             throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+s.name_);
@@ -416,7 +416,7 @@ Value signrawtransaction(const Array& params, bool fHelp)
         Array keys = params[2].get_array();
         BOOST_FOREACH(Value k, keys)
         {
-            CFreicoinSecret vchSecret;
+            CXcoinSecret vchSecret;
             bool fGood = vchSecret.SetString(k.get_str());
             if (!fGood)
                 throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY,"Invalid private key");

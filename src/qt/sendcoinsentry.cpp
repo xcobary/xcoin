@@ -1,7 +1,7 @@
 #include "sendcoinsentry.h"
 #include "ui_sendcoinsentry.h"
 #include "guiutil.h"
-#include "freicoinunits.h"
+#include "xunits.h"
 #include "addressbookpage.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
@@ -23,7 +23,7 @@ SendCoinsEntry::SendCoinsEntry(QWidget *parent) :
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
     ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
-    ui->payTo->setPlaceholderText(tr("Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
+    ui->payTo->setPlaceholderText(tr("Enter a Xcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)"));
 #endif
     setFocusPolicy(Qt::TabFocus);
     setFocusProxy(ui->payTo);
@@ -86,7 +86,7 @@ void SendCoinsEntry::clear()
     ui->addAsLabel->clear();
     ui->payAmount->clear();
     ui->payTo->setFocus();
-    // update the display unit, to not use the default ("FRC")
+    // update the display unit, to not use the default ("XCN")
     updateDisplayUnit();
 }
 

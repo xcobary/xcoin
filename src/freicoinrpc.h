@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef _FREICOINRPC_H_
-#define _FREICOINRPC_H_ 1
+#ifndef _XCOINRPC_H_
+#define _XCOINRPC_H_ 1
 
 #include <string>
 #include <list>
@@ -29,7 +29,7 @@ enum HTTPStatusCode
     HTTP_INTERNAL_SERVER_ERROR = 500,
 };
 
-// Freicoin RPC error codes
+// Xcoin RPC error codes
 enum RPCErrorCode
 {
     // Standard JSON-RPC 2.0 errors
@@ -50,7 +50,7 @@ enum RPCErrorCode
     RPC_DESERIALIZATION_ERROR       = -22, // Error parsing or validating structure in raw format
 
     // P2P client errors
-    RPC_CLIENT_NOT_CONNECTED        = -9,  // Freicoin is not connected
+    RPC_CLIENT_NOT_CONNECTED        = -9,  // Xcoin is not connected
     RPC_CLIENT_IN_INITIAL_DOWNLOAD  = -10, // Still downloading initial blocks
 
     // Wallet errors
@@ -99,7 +99,7 @@ public:
 };
 
 /**
- * Freicoin RPC command dispatcher.
+ * Xcoin RPC command dispatcher.
  */
 class CRPCTable
 {

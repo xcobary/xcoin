@@ -12,8 +12,8 @@
 // - E-mail usually won't line-break if there's no punctuation to break at.
 // - Double-clicking selects the whole number as one word if it's all alphanumeric.
 //
-#ifndef FREICOIN_BASE58_H
-#define FREICOIN_BASE58_H
+#ifndef XCOIN_BASE58_H
+#define XCOIN_BASE58_H
 
 #include <string>
 #include <vector>
@@ -253,25 +253,25 @@ public:
     bool operator> (const CBase58Data& b58) const { return CompareTo(b58) >  0; }
 };
 
-/** base58-encoded Freicoin addresses.
+/** base58-encoded Xcoin addresses.
  * Public-key-hash-addresses have version 0 (or 111 testnet).
  * The data vector contains RIPEMD160(SHA256(pubkey)), where pubkey is the serialized public key.
  * Script-hash-addresses have version 5 (or 196 testnet).
  * The data vector contains RIPEMD160(SHA256(cscript)), where cscript is the serialized redemption script.
  */
-class CFreicoinAddress;
-class CFreicoinAddressVisitor : public boost::static_visitor<bool>
+class CXcoinAddress;
+class CXcoinAddressVisitor : public boost::static_visitor<bool>
 {
 private:
-    CFreicoinAddress *addr;
+    CXcoinAddress *addr;
 public:
-    CFreicoinAddressVisitor(CFreicoinAddress *addrIn) : addr(addrIn) { }
+    CXcoinAddressVisitor(CXcoinAddress *addrIn) : addr(addrIn) { }
     bool operator()(const CKeyID &id) const;
     bool operator()(const CScriptID &id) const;
     bool operator()(const CNoDestination &no) const;
 };
 
-class CFreicoinAddress : public CBase58Data
+class CXcoinAddress : public CBase58Data
 {
 public:
     enum
@@ -294,7 +294,7 @@ public:
 
     bool Set(const CTxDestination &dest)
     {
-        return boost::apply_visitor(CFreicoinAddressVisitor(this), dest);
+        return boost::apply_visitor(CXcoinAddressVisitor(this), dest);
     }
 
     bool IsValid() const
@@ -327,21 +327,21 @@ public:
         return fExpectTestNet == fTestNet && vchData.size() == nExpectedSize;
     }
 
-    CFreicoinAddress()
+    CXcoinAddress()
     {
     }
 
-    CFreicoinAddress(const CTxDestination &dest)
+    CXcoinAddress(const CTxDestination &dest)
     {
         Set(dest);
     }
 
-    CFreicoinAddress(const std::string& strAddress)
+    CXcoinAddress(const std::string& strAddress)
     {
         SetString(strAddress);
     }
 
-    CFreicoinAddress(const char* pszAddress)
+    CXcoinAddress(const char* pszAddress)
     {
         SetString(pszAddress);
     }
@@ -411,12 +411,12 @@ public:
     }
 };
 
-bool inline CFreicoinAddressVisitor::operator()(const CKeyID &id) const         { return addr->Set(id); }
-bool inline CFreicoinAddressVisitor::operator()(const CScriptID &id) const      { return addr->Set(id); }
-bool inline CFreicoinAddressVisitor::operator()(const CNoDestination &id) const { return false; }
+bool inline CXcoinAddressVisitor::operator()(const CKeyID &id) const         { return addr->Set(id); }
+bool inline CXcoinAddressVisitor::operator()(const CScriptID &id) const      { return addr->Set(id); }
+bool inline CXcoinAddressVisitor::operator()(const CNoDestination &id) const { return false; }
 
 /** A base58-encoded secret key */
-class CFreicoinSecret : public CBase58Data
+class CXcoinSecret : public CBase58Data
 {
 public:
     void SetSecret(const CSecret& vchSecret, bool fCompressed)
@@ -464,12 +464,12 @@ public:
         return SetString(strSecret.c_str());
     }
 
-    CFreicoinSecret(const CSecret& vchSecret, bool fCompressed)
+    CXcoinSecret(const CSecret& vchSecret, bool fCompressed)
     {
         SetSecret(vchSecret, fCompressed);
     }
 
-    CFreicoinSecret()
+    CXcoinSecret()
     {
     }
 };

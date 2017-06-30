@@ -35,7 +35,7 @@ Designer: http://www.everaldo.com
 Icon Pack: Crystal SVG
 License: LGPL
 
-Icon: src/qt/res/icons/freicoin.png, src/qt/res/icons/toolbar.png
+Icon: src/qt/res/icons/x.png, src/qt/res/icons/toolbar.png
 Designer: Bitboy (optimized for 16x16 by Wladimir van der Laan)
 License: Public Domain
 Site: https://bitcointalk.org/?topic=1756.0

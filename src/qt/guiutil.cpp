@@ -1,7 +1,7 @@
 #include "guiutil.h"
-#include "freicoinaddressvalidator.h"
+#include "xaddressvalidator.h"
 #include "walletmodel.h"
-#include "freicoinunits.h"
+#include "xunits.h"
 #include "util.h"
 #include "init.h"
 
@@ -52,7 +52,7 @@ QString dateTimeStr(qint64 nTime)
     return dateTimeStr(QDateTime::fromTime_t((qint32)nTime));
 }
 
-QFont freicoinAddressFont()
+QFont xAddressFont()
 {
     QFont font("Monospace");
     font.setStyleHint(QFont::TypeWriter);
@@ -61,9 +61,9 @@ QFont freicoinAddressFont()
 
 void setupAddressWidget(QLineEdit *widget, QWidget *parent)
 {
-    widget->setMaxLength(FreicoinAddressValidator::MaxAddressLength);
-    widget->setValidator(new FreicoinAddressValidator(parent));
-    widget->setFont(freicoinAddressFont());
+    widget->setMaxLength(XcoinAddressValidator::MaxAddressLength);
+    widget->setValidator(new XcoinAddressValidator(parent));
+    widget->setFont(xAddressFont());
 }
 
 void setupAmountWidget(QLineEdit *widget, QWidget *parent)
@@ -75,9 +75,9 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
     widget->setAlignment(Qt::AlignRight|Qt::AlignVCenter);
 }
 
-bool parseFreicoinURI(const QUrl &uri, SendCoinsRecipient *out)
+bool parseXcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    if(uri.scheme() != QString("freicoin"))
+    if(uri.scheme() != QString("x"))
         return false;
 
     SendCoinsRecipient rv;
@@ -102,7 +102,7 @@ bool parseFreicoinURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!FreicoinUnits::parse(FreicoinUnits::FRC, i->second, &rv.amount))
+                if(!XcoinUnits::parse(XcoinUnits::XCN, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -120,18 +120,18 @@ bool parseFreicoinURI(const QUrl &uri, SendCoinsRecipient *out)
     return true;
 }
 
-bool parseFreicoinURI(QString uri, SendCoinsRecipient *out)
+bool parseXcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert freicoin:// to freicoin:
+    // Convert x:// to x:
     //
-    //    Cannot handle this later, because freicoin:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because x:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("freicoin://"))
+    if(uri.startsWith("x://"))
     {
-        uri.replace(0, 10, "freicoin:");
+        uri.replace(0, 10, "x:");
     }
     QUrl uriInstance(uri);
-    return parseFreicoinURI(uriInstance, out);
+    return parseXcoinURI(uriInstance, out);
 }
 
 QString HtmlEscape(const QString& str, bool fMultiLine)
@@ -272,12 +272,12 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Freicoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Xcoin.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Freicoin.lnk
+    // check for Xcoin.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -354,7 +354,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "freicoin.desktop";
+    return GetAutostartDir() / "x.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -392,10 +392,10 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         boost::filesystem::ofstream optionFile(GetAutostartFilePath(), std::ios_base::out|std::ios_base::trunc);
         if (!optionFile.good())
             return false;
-        // Write a freicoin.desktop file to the autostart directory:
+        // Write a x.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Freicoin\n";
+        optionFile << "Name=Xcoin\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -416,10 +416,10 @@ bool SetStartOnSystemStartup(bool fAutoStart) { return false; }
 HelpMessageBox::HelpMessageBox(QWidget *parent) :
     QMessageBox(parent)
 {
-    header = tr("Freicoin-Qt") + " " + tr("version") + " " +
+    header = tr("Xcoin-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  freicoin-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  x-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 
@@ -428,7 +428,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
         "  -min                   " + tr("Start minimized") + "\n" +
         "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n";
 
-    setWindowTitle(tr("Freicoin-Qt"));
+    setWindowTitle(tr("Xcoin-Qt"));
     setTextFormat(Qt::PlainText);
     // setMinimumWidth is ignored for QMessageBox so put in non-breaking spaces to make it wider.
     setText(header + QString(QChar(0x2003)).repeated(50));

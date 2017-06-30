@@ -1,4 +1,4 @@
-#define BOOST_TEST_MODULE Freicoin Test Suite
+#define BOOST_TEST_MODULE Xcoin Test Suite
 #include <boost/test/unit_test.hpp>
 
 #include "db.h"

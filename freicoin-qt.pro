@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = freicoin-qt
+TARGET = x-qt
 VERSION = 0.0.2-2
 INCLUDEPATH += src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
@@ -85,8 +85,8 @@ contains(USE_IPV6, -) {
     DEFINES += USE_IPV6=$$USE_IPV6
 }
 
-contains(FREICOIN_NEED_QT_PLUGINS, 1) {
-    DEFINES += FREICOIN_NEED_QT_PLUGINS
+contains(XCOIN_NEED_QT_PLUGINS, 1) {
+    DEFINES += XCOIN_NEED_QT_PLUGINS
     QTPLUGIN += qcncodecs qjpcodecs qtwcodecs qkrcodecs qtaccessiblewidgets
 }
 
@@ -105,7 +105,7 @@ QMAKE_CXXFLAGS_WARN_ON = -fdiagnostics-show-option -Wall -Wextra -Wformat -Wform
 
 # Input
 DEPENDPATH += src src/json src/qt
-HEADERS += src/qt/freicoingui.h \
+HEADERS += src/qt/xgui.h \
     src/qt/transactiontablemodel.h \
     src/qt/addresstablemodel.h \
     src/qt/optionsdialog.h \
@@ -114,7 +114,7 @@ HEADERS += src/qt/freicoingui.h \
     src/qt/signverifymessagedialog.h \
     src/qt/aboutdialog.h \
     src/qt/editaddressdialog.h \
-    src/qt/freicoinaddressvalidator.h \
+    src/qt/xaddressvalidator.h \
     src/alert.h \
     src/addrman.h \
     src/base58.h \
@@ -151,19 +151,19 @@ HEADERS += src/qt/freicoingui.h \
     src/qt/monitoreddatamapper.h \
     src/qt/transactiondesc.h \
     src/qt/transactiondescdialog.h \
-    src/qt/freicoinamountfield.h \
+    src/qt/xamountfield.h \
     src/wallet.h \
     src/keystore.h \
     src/qt/transactionfilterproxy.h \
     src/qt/transactionview.h \
     src/qt/walletmodel.h \
-    src/freicoinrpc.h \
+    src/xrpc.h \
     src/qt/overviewpage.h \
     src/qt/csvmodelwriter.h \
     src/crypter.h \
     src/qt/sendcoinsentry.h \
     src/qt/qvalidatedlineedit.h \
-    src/qt/freicoinunits.h \
+    src/qt/xunits.h \
     src/qt/qvaluecombobox.h \
     src/qt/askpassphrasedialog.h \
     src/protocol.h \
@@ -176,7 +176,7 @@ HEADERS += src/qt/freicoingui.h \
     src/netbase.h \
     src/clientversion.h
 
-SOURCES += src/qt/freicoin.cpp src/qt/freicoingui.cpp \
+SOURCES += src/qt/x.cpp src/qt/xgui.cpp \
     src/qt/transactiontablemodel.cpp \
     src/qt/addresstablemodel.cpp \
     src/qt/optionsdialog.cpp \
@@ -185,7 +185,7 @@ SOURCES += src/qt/freicoin.cpp src/qt/freicoingui.cpp \
     src/qt/signverifymessagedialog.cpp \
     src/qt/aboutdialog.cpp \
     src/qt/editaddressdialog.cpp \
-    src/qt/freicoinaddressvalidator.cpp \
+    src/qt/xaddressvalidator.cpp \
     src/alert.cpp \
     src/version.cpp \
     src/sync.cpp \
@@ -208,14 +208,14 @@ SOURCES += src/qt/freicoin.cpp src/qt/freicoingui.cpp \
     src/qt/monitoreddatamapper.cpp \
     src/qt/transactiondesc.cpp \
     src/qt/transactiondescdialog.cpp \
-    src/qt/freicoinstrings.cpp \
-    src/qt/freicoinamountfield.cpp \
+    src/qt/xstrings.cpp \
+    src/qt/xamountfield.cpp \
     src/wallet.cpp \
     src/keystore.cpp \
     src/qt/transactionfilterproxy.cpp \
     src/qt/transactionview.cpp \
     src/qt/walletmodel.cpp \
-    src/freicoinrpc.cpp \
+    src/xrpc.cpp \
     src/rpcdump.cpp \
     src/rpcnet.cpp \
     src/rpcmining.cpp \
@@ -227,7 +227,7 @@ SOURCES += src/qt/freicoin.cpp src/qt/freicoingui.cpp \
     src/crypter.cpp \
     src/qt/sendcoinsentry.cpp \
     src/qt/qvalidatedlineedit.cpp \
-    src/qt/freicoinunits.cpp \
+    src/qt/xunits.cpp \
     src/qt/qvaluecombobox.cpp \
     src/qt/askpassphrasedialog.cpp \
     src/protocol.cpp \
@@ -237,7 +237,7 @@ SOURCES += src/qt/freicoin.cpp src/qt/freicoingui.cpp \
     src/noui.cpp
 
 RESOURCES += \
-    src/qt/freicoin.qrc
+    src/qt/x.qrc
 
 FORMS += \
     src/qt/forms/sendcoinsdialog.ui \
@@ -258,21 +258,21 @@ SOURCES += src/qt/qrcodedialog.cpp
 FORMS += src/qt/forms/qrcodedialog.ui
 }
 
-contains(FREICOIN_QT_TEST, 1) {
+contains(XCOIN_QT_TEST, 1) {
 SOURCES += src/qt/test/test_main.cpp \
     src/qt/test/uritests.cpp
 HEADERS += src/qt/test/uritests.h
 DEPENDPATH += src/qt/test
 QT += testlib
-TARGET = freicoin-qt_test
-DEFINES += FREICOIN_QT_TEST
+TARGET = x-qt_test
+DEFINES += XCOIN_QT_TEST
 }
 
 CODECFORTR = UTF-8
 
 # for lrelease/lupdate
-# also add new translations to src/qt/freicoin.qrc under translations/
-TRANSLATIONS = $$files(src/qt/locale/freicoin_*.ts)
+# also add new translations to src/qt/x.qrc under translations/
+TRANSLATIONS = $$files(src/qt/locale/x_*.ts)
 
 isEmpty(QMAKE_LRELEASE) {
     win32:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]\\lrelease.exe
@@ -289,7 +289,7 @@ QMAKE_EXTRA_COMPILERS += TSQM
 
 # "Other files" to show in Qt Creator
 OTHER_FILES += \
-    doc/*.rst doc/*.txt doc/README README.md res/freicoin-qt.rc src/test/*.cpp src/test/*.h src/qt/test/*.cpp src/qt/test/*.h
+    doc/*.rst doc/*.txt doc/README README.md res/x-qt.rc src/test/*.cpp src/test/*.h src/qt/test/*.cpp src/qt/test/*.h
 
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
@@ -322,7 +322,7 @@ isEmpty(BOOST_INCLUDE_PATH) {
 }
 
 windows:DEFINES += WIN32
-windows:RC_FILE = src/qt/res/freicoin-qt.rc
+windows:RC_FILE = src/qt/res/x-qt.rc
 
 windows:!contains(MINGW_THREAD_BUGFIX, 0) {
     # At least qmake's win32-g++-cross profile is missing the -lmingwthrd
@@ -344,8 +344,8 @@ macx:HEADERS += src/qt/macdockiconhandler.h
 macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
-macx:ICON = src/qt/res/icons/freicoin.icns
-macx:TARGET = "Freicoin-Qt"
+macx:ICON = src/qt/res/icons/x.icns
+macx:TARGET = "Xcoin-Qt"
 macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread

@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef FREICOIN_UTIL_H
-#define FREICOIN_UTIL_H
+#ifndef XCOIN_UTIL_H
+#define XCOIN_UTIL_H
 
 #include "uint256.h"
 

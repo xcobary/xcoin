@@ -11,10 +11,10 @@ packages:
 reference_datetime: "2012-07-01 00:00:00"
 remotes: []
 files:
-- "Freicoin-Qt-i686-pc-linux-gnu-0.0.2-2-gitian.zip"
-- "Freicoin-Qt-x86_64-pc-linux-gnu-0.0.2-2-gitian.zip"
-- "freicoind-i686-pc-linux-gnu-0.0.2-2-gitian.zip"
-- "freicoind-x86_64-pc-linux-gnu-0.0.2-2-gitian.zip"
+- "Xcoin-Qt-i686-pc-linux-gnu-0.0.2-2-gitian.zip"
+- "Xcoin-Qt-x86_64-pc-linux-gnu-0.0.2-2-gitian.zip"
+- "xd-i686-pc-linux-gnu-0.0.2-2-gitian.zip"
+- "xd-x86_64-pc-linux-gnu-0.0.2-2-gitian.zip"
 - "src-local.tar.xz"
 script: |
   export ARCH=linux
@@ -24,33 +24,33 @@ script: |
   
   export GITIANDIR=`pwd`
   
-  FREICOIN_VER=0.0.2-2
+  XCOIN_VER=0.0.2-2
   
   export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
   export TZ=UTC
   export FAKETIME=$REFERENCE_DATETIME
   
-  mkdir -p "$PREFIX"/freicoin-${FREICOIN_VER}-${ARCH}
-  pushd "$PREFIX"/freicoin-${FREICOIN_VER}-${ARCH}
+  mkdir -p "$PREFIX"/x-${XCOIN_VER}-${ARCH}
+  pushd "$PREFIX"/x-${XCOIN_VER}-${ARCH}
 
   mkdir -p src
   tar -C src -xf "$GITIANDIR"/src-local.tar.xz
   cp -a src/doc/README .
   cp -a src/COPYING .
   mkdir -p bin/32
-  unzip "$GITIANDIR"/freicoind-i686-pc-linux-gnu-${FREICOIN_VER}-gitian.zip bin/freicoind
-  unzip "$GITIANDIR"/Freicoin-Qt-i686-pc-linux-gnu-${FREICOIN_VER}-gitian.zip bin/Freicoin-Qt
-  mv bin/freicoind bin/Freicoin-Qt bin/32
+  unzip "$GITIANDIR"/xd-i686-pc-linux-gnu-${XCOIN_VER}-gitian.zip bin/xd
+  unzip "$GITIANDIR"/Xcoin-Qt-i686-pc-linux-gnu-${XCOIN_VER}-gitian.zip bin/Xcoin-Qt
+  mv bin/xd bin/Xcoin-Qt bin/32
   mkdir -p bin/64
-  unzip "$GITIANDIR"/freicoind-x86_64-pc-linux-gnu-${FREICOIN_VER}-gitian.zip bin/freicoind
-  unzip "$GITIANDIR"/Freicoin-Qt-x86_64-pc-linux-gnu-${FREICOIN_VER}-gitian.zip bin/Freicoin-Qt
-  mv bin/freicoind bin/Freicoin-Qt bin/64
+  unzip "$GITIANDIR"/xd-x86_64-pc-linux-gnu-${XCOIN_VER}-gitian.zip bin/xd
+  unzip "$GITIANDIR"/Xcoin-Qt-x86_64-pc-linux-gnu-${XCOIN_VER}-gitian.zip bin/Xcoin-Qt
+  mv bin/xd bin/Xcoin-Qt bin/64
   
   cd ..
-  find freicoin-${FREICOIN_VER}-${ARCH} -not -type d -print0 | sort -z | xargs -0 \
-    tar -uf "$OUTDIR"/freicoin-${FREICOIN_VER}-${ARCH}.tar
+  find x-${XCOIN_VER}-${ARCH} -not -type d -print0 | sort -z | xargs -0 \
+    tar -uf "$OUTDIR"/x-${XCOIN_VER}-${ARCH}.tar
   popd
   
   pushd "$OUTDIR"
-  xz -6e freicoin-${FREICOIN_VER}-${ARCH}.tar
+  xz -6e x-${XCOIN_VER}-${ARCH}.tar
   popd

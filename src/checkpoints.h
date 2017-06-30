@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef FREICOIN_CHECKPOINT_H
-#define FREICOIN_CHECKPOINT_H
+#ifndef XCOIN_CHECKPOINT_H
+#define XCOIN_CHECKPOINT_H
 
 #include <map>
 

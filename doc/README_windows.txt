@@ -1,4 +1,4 @@
-Freicoin 0.0.2-2
+Xcoin 0.0.2-2
 
 Copyright (c) 2009-2012 Bitcoin Developers
 Distributed under the MIT/X11 software license, see the accompanying
@@ -10,7 +10,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-Freicoin is a free open source peer-to-peer electronic cash system that is
+Xcoin is a free open source peer-to-peer electronic cash system that is
 completely decentralized, without the need for a central server or trusted
 parties.  Users hold the crypto keys to their own money and transact directly
 with each other, with the help of a P2P network to check for double-spending.
@@ -18,17 +18,17 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 -----
-Unpack the files into a directory and run freicoin-qt.exe.
+Unpack the files into a directory and run x-qt.exe.
 
-If you have Microsoft Security Essentials, you need to add freicoin.exe to its
+If you have Microsoft Security Essentials, you need to add x.exe to its
 "Excluded processes" list.  Microsoft Security Essentials->Settings tab,
-select Excluded processes, press Add, select freicoin.exe, OK, Save changes.
+select Excluded processes, press Add, select x.exe, OK, Save changes.
 
 The software automatically finds other nodes to connect to.  You can
 enable Universal Plug and Play using a menu entry or set your firewall
 to forward port 8639 (TCP) to your computer so you can receive
-incoming connections.  Freicoin works without incoming connections,
-but allowing incoming connections helps the Freicoin network.
+incoming connections.  Xcoin works without incoming connections,
+but allowing incoming connections helps the Xcoin network.
 
 See the bitcoin wiki at:
   https://en.bitcoin.it/wiki/Main_Page

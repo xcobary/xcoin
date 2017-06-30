@@ -1,7 +1,7 @@
 #include "sendcoinsdialog.h"
 #include "ui_sendcoinsdialog.h"
 #include "walletmodel.h"
-#include "freicoinunits.h"
+#include "xunits.h"
 #include "addressbookpage.h"
 #include "optionsmodel.h"
 #include "sendcoinsentry.h"
@@ -96,7 +96,7 @@ void SendCoinsDialog::on_sendButton_clicked()
     QStringList formatted;
     foreach(const SendCoinsRecipient &rcp, recipients)
     {
-        formatted.append(tr("<b>%1</b> to %2 (%3)").arg(FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, rcp.amount), Qt::escape(rcp.label), rcp.address));
+        formatted.append(tr("<b>%1</b> to %2 (%3)").arg(XcoinUnits::formatWithUnit(XcoinUnits::XCN, rcp.amount), Qt::escape(rcp.label), rcp.address));
     }
 
     fNewRecipientAllowed = false;
@@ -141,7 +141,7 @@ void SendCoinsDialog::on_sendButton_clicked()
     case WalletModel::AmountWithFeeExceedsBalance:
         QMessageBox::warning(this, tr("Send Coins"),
             tr("The total exceeds your balance when the %1 transaction fee is included.").
-            arg(FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, sendstatus.fee)),
+            arg(XcoinUnits::formatWithUnit(XcoinUnits::XCN, sendstatus.fee)),
             QMessageBox::Ok, QMessageBox::Ok);
         break;
     case WalletModel::DuplicateAddress:
@@ -275,9 +275,9 @@ bool SendCoinsDialog::handleURI(const QString &uri)
 {
     SendCoinsRecipient rv;
     // URI has to be valid
-    if (GUIUtil::parseFreicoinURI(uri, &rv))
+    if (GUIUtil::parseXcoinURI(uri, &rv))
     {
-        CFreicoinAddress address(rv.address.toStdString());
+        CXcoinAddress address(rv.address.toStdString());
         if (!address.IsValid())
             return false;
         pasteEntry(rv);
@@ -295,7 +295,7 @@ void SendCoinsDialog::setBalance(const mpq& balance, const mpq& unconfirmedBalan
         return;
 
     int unit = model->getOptionsModel()->getDisplayUnit();
-    ui->labelBalance->setText(FreicoinUnits::formatWithUnit(unit, RoundAbsolute(balance, ROUND_TOWARDS_ZERO)));
+    ui->labelBalance->setText(XcoinUnits::formatWithUnit(unit, RoundAbsolute(balance, ROUND_TOWARDS_ZERO)));
 }
 
 void SendCoinsDialog::updateDisplayUnit()
@@ -303,6 +303,6 @@ void SendCoinsDialog::updateDisplayUnit()
     if(model && model->getOptionsModel())
     {
         // Update labelBalance with the current balance and the current unit
-        ui->labelBalance->setText(FreicoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), RoundAbsolute(model->getBalance(nBestHeight), ROUND_TOWARDS_ZERO)));
+        ui->labelBalance->setText(XcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), RoundAbsolute(model->getBalance(nBestHeight), ROUND_TOWARDS_ZERO)));
     }
 }

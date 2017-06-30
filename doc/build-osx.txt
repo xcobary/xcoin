@@ -7,12 +7,12 @@ cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP
 software written by Thomas Bernard.
 
 
-Mac OS X freicoind build instructions
+Mac OS X xd build instructions
 Laszlo Hanyecz <solar@heliacal.net>
 Douglas Huff <dhuff@jrbobdobbs.org>
 
 
-See readme-qt.rst for instructions on building Freicoin-Qt, the
+See readme-qt.rst for instructions on building Xcoin-Qt, the
 graphical user interface.
 
 Tested on 10.5, 10.6 and 10.7 intel.  PPC is not supported because it's big-endian.
@@ -27,7 +27,7 @@ install DVD, but if not, you can get the current version from https://developer.
 
 1.  Clone the github tree to get the source code:
 
-git clone git@github.com:freicoin/freicoin.git freicoin
+git clone git@github.com:x/x.git x
 
 2.  Download and install MacPorts from http://www.macports.org/
 
@@ -41,14 +41,14 @@ sudo port install boost db48 openssl miniupnpc gmp mpfr
 Optionally install qrencode (and set USE_QRCODE=1):
 sudo port install qrencode
 
-4.  Now you should be able to build freicoind:
+4.  Now you should be able to build xd:
 
-cd freicoin/src
+cd x/src
 make -f makefile.osx USE_IPV6=1
 
 Run:
-  ./freicoind --help  # for a list of command-line options.
+  ./xd --help  # for a list of command-line options.
 Run
-  ./freicoind -daemon # to start the freicoin daemon.
+  ./xd -daemon # to start the x daemon.
 Run
-  ./freicoind help # When the daemon is running, to get a list of RPC commands
+  ./xd help # When the daemon is running, to get a list of RPC commands

@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "main.h"
-#include "freicoinrpc.h"
+#include "xrpc.h"
 
 using namespace json_spirit;
 using namespace std;

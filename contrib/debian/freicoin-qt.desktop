@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Freicoin
-Comment=Freicoin P2P Cryptocurrency
-Comment[fr]=Freicoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Freicoin, eşten eşe kriptografik sanal para birimi
-Exec=/usr/bin/freicoin-qt
+Name=Xcoin
+Comment=Xcoin P2P Cryptocurrency
+Comment[fr]=Xcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Xcoin, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/x-qt
 Terminal=false
 Type=Application
-Icon=/usr/share/pixmaps/freicoin80.xpm
-MimeType=x-scheme-handler/freicoin;
+Icon=/usr/share/pixmaps/x80.xpm
+MimeType=x-scheme-handler/x;
 Categories=Office;

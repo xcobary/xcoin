@@ -103,7 +103,7 @@ def xfrange(x, y, step):
 
 if __name__ == '__main__':
     frc = history_from_csv('frc.csv')
-    print(u"Freicoin historical error: %f" % utility_function([(t,d) for n,t,d in frc]))
+    print(u"Xcoin historical error: %f" % utility_function([(t,d) for n,t,d in frc]))
 
     btc = history_from_csv('btc.csv')
     print(u"Bitcoin historical error: %f" % utility_function([(t,d) for n,t,d in btc]))

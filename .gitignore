@@ -1,7 +1,7 @@
 src/*.exe
-src/freicoin
-src/freicoind
-src/test_freicoin
+src/x
+src/xd
+src/test_x
 .*.swp
 *.*~*
 *.bak
@@ -9,11 +9,11 @@ src/test_freicoin
 *.orig
 *.o
 *.patch
-.freicoin
+.x
 #compilation and Qt preprocessor part
 *.qm
 Makefile
-freicoin-qt
+x-qt
 #resources cpp
 qrc_*.cpp
 #qt creator

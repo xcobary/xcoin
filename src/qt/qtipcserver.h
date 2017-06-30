@@ -2,7 +2,7 @@
 #define QTIPCSERVER_H
 
 // Define Bitcoin-Qt message queue name
-#define FREICOINURI_QUEUE_NAME "FreicoinURI"
+#define XCOINURI_QUEUE_NAME "XcoinURI"
 
 void ipcScanRelay(int argc, char *argv[]);
 void ipcInit(int argc, char *argv[]);

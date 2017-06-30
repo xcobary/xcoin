@@ -7,7 +7,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP
 software written by Thomas Bernard.
 
 
-See readme-qt.rst for instructions on building Freicoin-Qt, the
+See readme-qt.rst for instructions on building Xcoin-Qt, the
 graphical user interface.
 
 WINDOWS BUILD NOTES
@@ -82,9 +82,9 @@ make -f Makefile.mingw
 mkdir miniupnpc
 cp *.h miniupnpc/
 
-Freicoin
+Xcoin
 --------
 DOS prompt:
-cd \freicoin\src
+cd \x\src
 mingw32-make -f makefile.mingw
-strip freicoind.exe
+strip xd.exe

@@ -1,10 +1,10 @@
 /*
- * Qt4 freicoin GUI.
+ * Qt4 x GUI.
  *
  * W.J. van der Laan 2011-2012
  * The Bitcoin Developers 2011-2012
  */
-#include "freicoingui.h"
+#include "xgui.h"
 #include "transactiontablemodel.h"
 #include "addressbookpage.h"
 #include "sendcoinsdialog.h"
@@ -19,7 +19,7 @@
 #include "addresstablemodel.h"
 #include "transactionview.h"
 #include "overviewpage.h"
-#include "freicoinunits.h"
+#include "xunits.h"
 #include "guiconstants.h"
 #include "askpassphrasedialog.h"
 #include "notificator.h"
@@ -59,7 +59,7 @@
 
 #include <iostream>
 
-FreicoinGUI::FreicoinGUI(QWidget *parent):
+XcoinGUI::XcoinGUI(QWidget *parent):
     QMainWindow(parent),
     clientModel(0),
     walletModel(0),
@@ -71,10 +71,10 @@ FreicoinGUI::FreicoinGUI(QWidget *parent):
     rpcConsole(0)
 {
     restoreWindowGeometry();
-    setWindowTitle(tr("Freicoin") + " - " + tr("Wallet"));
+    setWindowTitle(tr("Xcoin") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
-    qApp->setWindowIcon(QIcon(":icons/freicoin"));
-    setWindowIcon(QIcon(":icons/freicoin"));
+    qApp->setWindowIcon(QIcon(":icons/x"));
+    setWindowIcon(QIcon(":icons/x"));
 #else
     setUnifiedTitleAndToolBarOnMac(true);
     QApplication::setAttribute(Qt::AA_DontShowIconsInMenus);
@@ -181,7 +181,7 @@ FreicoinGUI::FreicoinGUI(QWidget *parent):
     gotoOverviewPage();
 }
 
-FreicoinGUI::~FreicoinGUI()
+XcoinGUI::~XcoinGUI()
 {
     saveWindowGeometry();
     if(trayIcon) // Hide tray icon, as deleting will let it linger until quit (on Ubuntu)
@@ -191,7 +191,7 @@ FreicoinGUI::~FreicoinGUI()
 #endif
 }
 
-void FreicoinGUI::createActions()
+void XcoinGUI::createActions()
 {
     QActionGroup *tabGroup = new QActionGroup(this);
 
@@ -202,7 +202,7 @@ void FreicoinGUI::createActions()
     tabGroup->addAction(overviewAction);
 
     sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send"), this);
-    sendCoinsAction->setToolTip(tr("Send coins to a Freicoin address"));
+    sendCoinsAction->setToolTip(tr("Send coins to a Xcoin address"));
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
@@ -240,16 +240,16 @@ void FreicoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/freicoin"), tr("&About Freicoin"), this);
-    aboutAction->setToolTip(tr("Show information about Freicoin"));
+    aboutAction = new QAction(QIcon(":/icons/x"), tr("&About Xcoin"), this);
+    aboutAction->setToolTip(tr("Show information about Xcoin"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setToolTip(tr("Modify configuration options for Freicoin"));
+    optionsAction->setToolTip(tr("Modify configuration options for Xcoin"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
-    toggleHideAction = new QAction(QIcon(":/icons/freicoin"), tr("Show / &Hide"), this);
+    toggleHideAction = new QAction(QIcon(":/icons/x"), tr("Show / &Hide"), this);
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
     encryptWalletAction->setToolTip(tr("Encrypt or decrypt wallet"));
     encryptWalletAction->setCheckable(true);
@@ -277,7 +277,7 @@ void FreicoinGUI::createActions()
     connect(verifyMessageAction, SIGNAL(triggered()), this, SLOT(gotoVerifyMessageTab()));
 }
 
-void FreicoinGUI::createMenuBar()
+void XcoinGUI::createMenuBar()
 {
 #ifdef Q_OS_MAC
     // Create a decoupled menu bar on Mac which stays even if the window is closed
@@ -309,7 +309,7 @@ void FreicoinGUI::createMenuBar()
     help->addAction(aboutQtAction);
 }
 
-void FreicoinGUI::createToolBars()
+void XcoinGUI::createToolBars()
 {
     QToolBar *toolbar = addToolBar(tr("Tabs toolbar"));
     toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
@@ -324,7 +324,7 @@ void FreicoinGUI::createToolBars()
     toolbar2->addAction(exportAction);
 }
 
-void FreicoinGUI::setClientModel(ClientModel *clientModel)
+void XcoinGUI::setClientModel(ClientModel *clientModel)
 {
     this->clientModel = clientModel;
     if(clientModel)
@@ -334,14 +334,14 @@ void FreicoinGUI::setClientModel(ClientModel *clientModel)
         {
             setWindowTitle(windowTitle() + QString(" ") + tr("[testnet]"));
 #ifndef Q_OS_MAC
-            qApp->setWindowIcon(QIcon(":icons/freicoin_testnet"));
-            setWindowIcon(QIcon(":icons/freicoin_testnet"));
+            qApp->setWindowIcon(QIcon(":icons/x_testnet"));
+            setWindowIcon(QIcon(":icons/x_testnet"));
 #else
-            MacDockIconHandler::instance()->setIcon(QIcon(":icons/freicoin_testnet"));
+            MacDockIconHandler::instance()->setIcon(QIcon(":icons/x_testnet"));
 #endif
             if(trayIcon)
             {
-                trayIcon->setToolTip(tr("Freicoin client") + QString(" ") + tr("[testnet]"));
+                trayIcon->setToolTip(tr("Xcoin client") + QString(" ") + tr("[testnet]"));
                 trayIcon->setIcon(QIcon(":/icons/toolbar_testnet"));
                 toggleHideAction->setIcon(QIcon(":/icons/toolbar_testnet"));
             }
@@ -365,7 +365,7 @@ void FreicoinGUI::setClientModel(ClientModel *clientModel)
     }
 }
 
-void FreicoinGUI::setWalletModel(WalletModel *walletModel)
+void XcoinGUI::setWalletModel(WalletModel *walletModel)
 {
     this->walletModel = walletModel;
     if(walletModel)
@@ -394,14 +394,14 @@ void FreicoinGUI::setWalletModel(WalletModel *walletModel)
     }
 }
 
-void FreicoinGUI::createTrayIcon()
+void XcoinGUI::createTrayIcon()
 {
     QMenu *trayIconMenu;
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
-    trayIcon->setToolTip(tr("Freicoin client"));
+    trayIcon->setToolTip(tr("Xcoin client"));
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
     connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
             this, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));
@@ -432,7 +432,7 @@ void FreicoinGUI::createTrayIcon()
 }
 
 #ifndef Q_OS_MAC
-void FreicoinGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
+void XcoinGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 {
     if(reason == QSystemTrayIcon::Trigger)
     {
@@ -442,7 +442,7 @@ void FreicoinGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 }
 #endif
 
-void FreicoinGUI::optionsClicked()
+void XcoinGUI::optionsClicked()
 {
     if(!clientModel || !clientModel->getOptionsModel())
         return;
@@ -451,14 +451,14 @@ void FreicoinGUI::optionsClicked()
     dlg.exec();
 }
 
-void FreicoinGUI::aboutClicked()
+void XcoinGUI::aboutClicked()
 {
     AboutDialog dlg;
     dlg.setModel(clientModel);
     dlg.exec();
 }
 
-void FreicoinGUI::setNumConnections(int count)
+void XcoinGUI::setNumConnections(int count)
 {
     QString icon;
     switch(count)
@@ -470,10 +470,10 @@ void FreicoinGUI::setNumConnections(int count)
     default: icon = ":/icons/connect_4"; break;
     }
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to Freicoin network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to Xcoin network", "", count));
 }
 
-void FreicoinGUI::setNumBlocks(int count, int nTotalBlocks)
+void XcoinGUI::setNumBlocks(int count, int nTotalBlocks)
 {
     // don't show / hide progress bar and its label if we have no connection to the network
     if (!clientModel || clientModel->getNumConnections() == 0)
@@ -578,7 +578,7 @@ void FreicoinGUI::setNumBlocks(int count, int nTotalBlocks)
     progressBar->setToolTip(tooltip);
 }
 
-void FreicoinGUI::error(const QString &title, const QString &message, bool modal)
+void XcoinGUI::error(const QString &title, const QString &message, bool modal)
 {
     // Report errors from network/worker thread
     if(modal)
@@ -589,7 +589,7 @@ void FreicoinGUI::error(const QString &title, const QString &message, bool modal
     }
 }
 
-void FreicoinGUI::changeEvent(QEvent *e)
+void XcoinGUI::changeEvent(QEvent *e)
 {
     QMainWindow::changeEvent(e);
 #ifndef Q_OS_MAC // Ignored on Mac
@@ -608,7 +608,7 @@ void FreicoinGUI::changeEvent(QEvent *e)
 #endif
 }
 
-void FreicoinGUI::closeEvent(QCloseEvent *event)
+void XcoinGUI::closeEvent(QCloseEvent *event)
 {
     if(clientModel)
     {
@@ -623,14 +623,14 @@ void FreicoinGUI::closeEvent(QCloseEvent *event)
     QMainWindow::closeEvent(event);
 }
 
-void FreicoinGUI::saveWindowGeometry()
+void XcoinGUI::saveWindowGeometry()
 {
     QSettings settings;
     settings.setValue("winPos", pos());
     settings.setValue("winSize", size());
 }
 
-void FreicoinGUI::restoreWindowGeometry()
+void XcoinGUI::restoreWindowGeometry()
 {
     QSettings settings;
     QPoint pos = settings.value("winPos").toPoint();
@@ -645,20 +645,20 @@ void FreicoinGUI::restoreWindowGeometry()
     move(pos);
 }
 
-void FreicoinGUI::askFee(const mpq& nFeeRequired, bool *payFee)
+void XcoinGUI::askFee(const mpq& nFeeRequired, bool *payFee)
 {
     QString strMessage =
         tr("This transaction is over the size limit.  You can still send it for a fee of %1, "
           "which goes to the nodes that process your transaction and helps to support the network.  "
           "Do you want to pay the fee?").arg(
-                FreicoinUnits::formatWithUnit(FreicoinUnits::FRC, nFeeRequired));
+                XcoinUnits::formatWithUnit(XcoinUnits::XCN, nFeeRequired));
     QMessageBox::StandardButton retval = QMessageBox::question(
           this, tr("Confirm transaction fee"), strMessage,
           QMessageBox::Yes|QMessageBox::Cancel, QMessageBox::Yes);
     *payFee = (retval == QMessageBox::Yes);
 }
 
-void FreicoinGUI::incomingTransaction(const QModelIndex & parent, int start, int end)
+void XcoinGUI::incomingTransaction(const QModelIndex & parent, int start, int end)
 {
     if(!walletModel || !clientModel)
         return;
@@ -688,13 +688,13 @@ void FreicoinGUI::incomingTransaction(const QModelIndex & parent, int start, int
                                  "Type: %3\n"
                                  "Address: %4\n")
                               .arg(date)
-                              .arg(FreicoinUnits::formatWithUnit(walletModel->getOptionsModel()->getDisplayUnit(), amount, true))
+                              .arg(XcoinUnits::formatWithUnit(walletModel->getOptionsModel()->getDisplayUnit(), amount, true))
                               .arg(type)
                               .arg(address), icon);
     }
 }
 
-void FreicoinGUI::gotoOverviewPage()
+void XcoinGUI::gotoOverviewPage()
 {
     overviewAction->setChecked(true);
     centralWidget->setCurrentWidget(overviewPage);
@@ -703,7 +703,7 @@ void FreicoinGUI::gotoOverviewPage()
     disconnect(exportAction, SIGNAL(triggered()), 0, 0);
 }
 
-void FreicoinGUI::gotoHistoryPage()
+void XcoinGUI::gotoHistoryPage()
 {
     historyAction->setChecked(true);
     centralWidget->setCurrentWidget(transactionsPage);
@@ -713,7 +713,7 @@ void FreicoinGUI::gotoHistoryPage()
     connect(exportAction, SIGNAL(triggered()), transactionView, SLOT(exportClicked()));
 }
 
-void FreicoinGUI::gotoAddressBookPage()
+void XcoinGUI::gotoAddressBookPage()
 {
     addressBookAction->setChecked(true);
     centralWidget->setCurrentWidget(addressBookPage);
@@ -723,7 +723,7 @@ void FreicoinGUI::gotoAddressBookPage()
     connect(exportAction, SIGNAL(triggered()), addressBookPage, SLOT(exportClicked()));
 }
 
-void FreicoinGUI::gotoReceiveCoinsPage()
+void XcoinGUI::gotoReceiveCoinsPage()
 {
     receiveCoinsAction->setChecked(true);
     centralWidget->setCurrentWidget(receiveCoinsPage);
@@ -733,7 +733,7 @@ void FreicoinGUI::gotoReceiveCoinsPage()
     connect(exportAction, SIGNAL(triggered()), receiveCoinsPage, SLOT(exportClicked()));
 }
 
-void FreicoinGUI::gotoSendCoinsPage()
+void XcoinGUI::gotoSendCoinsPage()
 {
     sendCoinsAction->setChecked(true);
     centralWidget->setCurrentWidget(sendCoinsPage);
@@ -742,7 +742,7 @@ void FreicoinGUI::gotoSendCoinsPage()
     disconnect(exportAction, SIGNAL(triggered()), 0, 0);
 }
 
-void FreicoinGUI::gotoSignMessageTab(QString addr)
+void XcoinGUI::gotoSignMessageTab(QString addr)
 {
     // call show() in showTab_SM()
     signVerifyMessageDialog->showTab_SM(true);
@@ -751,7 +751,7 @@ void FreicoinGUI::gotoSignMessageTab(QString addr)
         signVerifyMessageDialog->setAddress_SM(addr);
 }
 
-void FreicoinGUI::gotoVerifyMessageTab(QString addr)
+void XcoinGUI::gotoVerifyMessageTab(QString addr)
 {
     // call show() in showTab_VM()
     signVerifyMessageDialog->showTab_VM(true);
@@ -760,14 +760,14 @@ void FreicoinGUI::gotoVerifyMessageTab(QString addr)
         signVerifyMessageDialog->setAddress_VM(addr);
 }
 
-void FreicoinGUI::dragEnterEvent(QDragEnterEvent *event)
+void XcoinGUI::dragEnterEvent(QDragEnterEvent *event)
 {
     // Accept only URIs
     if(event->mimeData()->hasUrls())
         event->acceptProposedAction();
 }
 
-void FreicoinGUI::dropEvent(QDropEvent *event)
+void XcoinGUI::dropEvent(QDropEvent *event)
 {
     if(event->mimeData()->hasUrls())
     {
@@ -783,13 +783,13 @@ void FreicoinGUI::dropEvent(QDropEvent *event)
         if (nValidUrisFound)
             gotoSendCoinsPage();
         else
-            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Freicoin address or malformed URI parameters."));
+            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Xcoin address or malformed URI parameters."));
     }
 
     event->acceptProposedAction();
 }
 
-void FreicoinGUI::handleURI(QString strURI)
+void XcoinGUI::handleURI(QString strURI)
 {
     // URI has to be valid
     if (sendCoinsPage->handleURI(strURI))
@@ -798,10 +798,10 @@ void FreicoinGUI::handleURI(QString strURI)
         gotoSendCoinsPage();
     }
     else
-        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Freicoin address or malformed URI parameters."));
+        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Xcoin address or malformed URI parameters."));
 }
 
-void FreicoinGUI::setEncryptionStatus(int status)
+void XcoinGUI::setEncryptionStatus(int status)
 {
     switch(status)
     {
@@ -830,7 +830,7 @@ void FreicoinGUI::setEncryptionStatus(int status)
     }
 }
 
-void FreicoinGUI::encryptWallet(bool status)
+void XcoinGUI::encryptWallet(bool status)
 {
     if(!walletModel)
         return;
@@ -842,7 +842,7 @@ void FreicoinGUI::encryptWallet(bool status)
     setEncryptionStatus(walletModel->getEncryptionStatus());
 }
 
-void FreicoinGUI::backupWallet()
+void XcoinGUI::backupWallet()
 {
     QString saveDir = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
     QString filename = QFileDialog::getSaveFileName(this, tr("Backup Wallet"), saveDir, tr("Wallet Data (*.dat)"));
@@ -853,14 +853,14 @@ void FreicoinGUI::backupWallet()
     }
 }
 
-void FreicoinGUI::changePassphrase()
+void XcoinGUI::changePassphrase()
 {
     AskPassphraseDialog dlg(AskPassphraseDialog::ChangePass, this);
     dlg.setModel(walletModel);
     dlg.exec();
 }
 
-void FreicoinGUI::unlockWallet()
+void XcoinGUI::unlockWallet()
 {
     if(!walletModel)
         return;
@@ -873,7 +873,7 @@ void FreicoinGUI::unlockWallet()
     }
 }
 
-void FreicoinGUI::showNormalIfMinimized(bool fToggleHidden)
+void XcoinGUI::showNormalIfMinimized(bool fToggleHidden)
 {
     // activateWindow() (sometimes) helps with keyboard focus on Windows
     if (isHidden())
@@ -895,7 +895,7 @@ void FreicoinGUI::showNormalIfMinimized(bool fToggleHidden)
         hide();
 }
 
-void FreicoinGUI::toggleHidden()
+void XcoinGUI::toggleHidden()
 {
     showNormalIfMinimized(true);
 }

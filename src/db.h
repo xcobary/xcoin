@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef FREICOIN_DB_H
-#define FREICOIN_DB_H
+#ifndef XCOIN_DB_H
+#define XCOIN_DB_H
 
 #include "main.h"
 
@@ -359,4 +359,4 @@ public:
     bool Read(CAddrMan& addr);
 };
 
-#endif // FREICOIN_DB_H
+#endif // XCOIN_DB_H

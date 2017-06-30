@@ -2,8 +2,8 @@
 // Copyright (c) 2012 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef FREICOIN_UI_INTERFACE_H
-#define FREICOIN_UI_INTERFACE_H
+#ifndef XCOIN_UI_INTERFACE_H
+#define XCOIN_UI_INTERFACE_H
 
 #include <string>
 #include "bignum.h" // for mpq

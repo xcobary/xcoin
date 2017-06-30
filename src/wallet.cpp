@@ -1249,7 +1249,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, mpq> >& vecSend, int 
 
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-freicoin-address
+                    // change transaction isn't always pay-to-x-address
                     CScript scriptChange;
                     scriptChange.SetDestination(vchPubKey.GetID());
 
@@ -1406,7 +1406,7 @@ string CWallet::SendMoneyToDestination(const CTxDestination& address, const mpq&
     if (nValue + nTransactionFee > GetBalance(nRefHeight))
         return _("Insufficient funds");
 
-    // Parse Freicoin address
+    // Parse Xcoin address
     CScript scriptPubKey;
     scriptPubKey.SetDestination(address);
 
@@ -1449,7 +1449,7 @@ bool CWallet::SetAddressBookName(const CTxDestination& address, const string& st
     NotifyAddressBookChanged(this, address, strName, ::IsMine(*this, address), (mi == mapAddressBook.end()) ? CT_NEW : CT_UPDATED);
     if (!fFileBacked)
         return false;
-    return CWalletDB(strWalletFile).WriteName(CFreicoinAddress(address).ToString(), strName);
+    return CWalletDB(strWalletFile).WriteName(CXcoinAddress(address).ToString(), strName);
 }
 
 bool CWallet::DelAddressBookName(const CTxDestination& address)
@@ -1458,7 +1458,7 @@ bool CWallet::DelAddressBookName(const CTxDestination& address)
     NotifyAddressBookChanged(this, address, "", ::IsMine(*this, address), CT_DELETED);
     if (!fFileBacked)
         return false;
-    return CWalletDB(strWalletFile).EraseName(CFreicoinAddress(address).ToString());
+    return CWalletDB(strWalletFile).EraseName(CXcoinAddress(address).ToString());
 }
 
 

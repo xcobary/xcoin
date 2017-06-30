@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef FREICOIN_MAIN_H
-#define FREICOIN_MAIN_H
+#ifndef XCOIN_MAIN_H
+#define XCOIN_MAIN_H
 
 #include "bignum.h"
 #include "sync.h"
@@ -106,7 +106,7 @@ CBlockIndex* FindBlockByHeight(int nHeight);
 bool ProcessMessages(CNode* pfrom);
 bool SendMessages(CNode* pto, bool fSendTrickle);
 bool LoadExternalBlockFile(FILE* fileIn);
-void GenerateFreicoins(bool fGenerate, CWallet* pwallet);
+void GenerateXcoins(bool fGenerate, CWallet* pwallet);
 CBlock* CreateNewBlock(CReserveKey& reservekey);
 void IncrementExtraNonce(CBlock* pblock, CBlockIndex* pindexPrev, unsigned int& nExtraNonce);
 void FormatHashBuffers(CBlock* pblock, char* pmidstate, char* pdata, char* phash1);
@@ -547,7 +547,7 @@ public:
      */
     unsigned int GetP2SHSigOpCount(const MapPrevTx& mapInputs) const;
 
-    /** Amount of freicoins spent by this transaction.
+    /** Amount of xs spent by this transaction.
         @return sum of all outputs (note: does not include fees)
      */
     mpq GetValueOut() const
@@ -562,7 +562,7 @@ public:
         return i64_to_mpq(nValueOut);
     }
 
-    /** Amount of freicoins coming in to this transaction
+    /** Amount of xs coming in to this transaction
         Note that lightweight clients may not know anything besides the hash of previous transactions,
         so may not be able to calculate this.
 

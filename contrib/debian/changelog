@@ -1,4 +1,4 @@
-freicoin (0.0.2~precise4) precise; urgency=high
+x (0.0.2~precise4) precise; urgency=high
 
   [Mark Friedenbach]
     * Add the new difficulty adjustment algorithm, which replaces the simple
@@ -9,7 +9,7 @@ freicoin (0.0.2~precise4) precise; urgency=high
       network by adding a threshold block after which the new difficulty
       adjustment algorithm takes over, for both mainnet and testnet.
     * Added Python simulator of new difficulty adjustment algorithm.
-    * Fixed two related bugs in the freicoin "accounts" system. First, the
+    * Fixed two related bugs in the x "accounts" system. First, the
       'move' RPC command now generates AccountingEntry records with the
       current reference height rather than refheight=0. Second, the
       'listaccounts' RPC command properly time-value adjusts AccountingEntry
@@ -20,7 +20,7 @@ freicoin (0.0.2~precise4) precise; urgency=high
       being used for the inputs. This was resulting in smaller (or even
       negative) fees for the purposes of priority calculation, thereby
       resulting in transactions that had trouble getting on the block chain.
-    * Change nVersion on Freicoin Foundation addresses to testnet format, so
+    * Change nVersion on Xcoin Foundation addresses to testnet format, so
       that budgets validate correctly. This enables mining on testnet.
     * Modified output of 'getblocktemplate' RPC command to include a 'budget'
       array specifying budgetary requirements.
@@ -30,7 +30,7 @@ freicoin (0.0.2~precise4) precise; urgency=high
 
  -- Mark Friedenbach <mark@monetize.io>  Sun, 11 May 2013 12:00:00 -0000
 
-freicoin (0.0.2~precise1) precise; urgency=high
+x (0.0.2~precise1) precise; urgency=high
 
   [Mark Friedenbach]
     * Merge of upstream v0.7.2 bitcoind source tree.
@@ -41,7 +41,7 @@ freicoin (0.0.2~precise1) precise; urgency=high
 
  -- Mark Friedenbach <mark@monetize.io>  Sun, 10 Feb 2013 12:00:00 -0000
 
-freicoin (0.0.1~precise4) precise; urgency=high
+x (0.0.1~precise4) precise; urgency=high
 
   [ Mark Friedenbach ]
     * Add extra check that coinbase transaction has reference height equal to
@@ -49,7 +49,7 @@ freicoin (0.0.1~precise4) precise; urgency=high
 
  -- Mark Friedenbach <mark@monetize.io>  Sun, 30 Dec 2012 15:30:00 -0000
 
-freicoin (0.0.1~precise3) precise; urgency=high
+x (0.0.1~precise3) precise; urgency=high
 
   [ Mark Friedenbach ]
     * Fix bug that was causing amounts to be rounded to the nearest COIN in
@@ -57,14 +57,14 @@ freicoin (0.0.1~precise3) precise; urgency=high
 
  -- Mark Friedenbach <mark@monetize.io>  Fri, 28 Dec 2012 16:45:00 -0000
 
-freicoin (0.0.1~precise2) precise; urgency=low
+x (0.0.1~precise2) precise; urgency=low
 
   [ Mark Friedenbach ]
     * Checkpoint at block 10080.
 
  -- Mark Friedenbach <mark@monetize.io>  Tue, 25 Dec 2012 18:30:00 -0000
 
-freicoin (0.0.1~precise1) precise; urgency=low
+x (0.0.1~precise1) precise; urgency=low
 
   [ Mark Friedenbach ]
     * Block chain reset for final release.
@@ -74,7 +74,7 @@ freicoin (0.0.1~precise1) precise; urgency=low
 
  -- Mark Friedenbach <mark@monetize.io>  Fri, 21 Dec 2012 21:00:00 -0000
 
-freicoin (0.0.0+1rc1~precise1) precise; urgency=low
+x (0.0.0+1rc1~precise1) precise; urgency=low
 
   [ Mark Friedenbach ]
     * Block chain reset for release candidate.
@@ -84,39 +84,39 @@ freicoin (0.0.0+1rc1~precise1) precise; urgency=low
       candidate.
 
   [ Roman Mindalev ]
-    * [GUI] Fix transaction fee in uFRC; change step for up and down arrows
-      on GUI widget to be 0.01 units for uFRC (1 satoshi).
+    * [GUI] Fix transaction fee in uXCN; change step for up and down arrows
+      on GUI widget to be 0.01 units for uXCN (1 satoshi).
 
  -- Mark Friedenbach <mark@monetize.io>  Mon, 17 Dec 2012 21:00:00 -0000
 
-freicoin (0.0.0+1beta5~precise6) precise; urgency=low
+x (0.0.0+1beta5~precise6) precise; urgency=low
 
   [ Mark Friedenbach ]
-    * Revert FreicoinAmountField to work with qint64 values, as a temporary
+    * Revert XcoinAmountField to work with qint64 values, as a temporary
       workaround to get the GUI field working again.
-    * Remove extra, unused digits of precision from FreicoinUnits::format().
+    * Remove extra, unused digits of precision from XcoinUnits::format().
     * Explicitly set the budget address for the genesis block, so that we're
       able to load under fTestNet conditions as well.
 
  -- Mark Friedenbach <mark@monetize.io>  Mon, 10 Dec 2012 12:00:00 -0800
 
-freicoin (0.0.0+1beta5~precise5) precise; urgency=low
+x (0.0.0+1beta5~precise5) precise; urgency=low
 
   [ Mark Friedenbach ]
     * JSON-RPC commands were parsing money values incorrectly--returning the
       numerical value in units of satoshis, not coins. This is now fixed.
-    * FreicoinUnits::amountDigits() now returns the correct value (previous
+    * XcoinUnits::amountDigits() now returns the correct value (previous
       off-by-one error due to a simple arithmetic mistake).
     * Fixed logical error in ParseMoney() which was causing amounts less than
       1 COIN to be parsed in octal, leading to incorrect values or even
       abnormal program termination (if non-octal digits are encountered).
 
   [ Roman Mindalev ]
-    * Update remaining images from bitcoin -> freicoin.
+    * Update remaining images from bitcoin -> x.
 
  -- Mark Friedenbach <mark@monetize.io>  Sat, 9 Dec 2012 22:00:00 -0800
 
-freicoin (0.0.0+1beta5~precise4) precise; urgency=low
+x (0.0.0+1beta5~precise4) precise; urgency=low
 
   [ Mark Friedenbach ]
     * Revert JSON-RPC back to handling financial amounts as floating point; a
@@ -127,7 +127,7 @@ freicoin (0.0.0+1beta5~precise4) precise; urgency=low
 
  -- Mark Friedenbach <mark@monetize.io>  Fri, 8 Dec 2012 12:00:00 -0800
 
-freicoin (0.0.0+1beta5~precise3) precise; urgency=low
+x (0.0.0+1beta5~precise3) precise; urgency=low
 
   [ Mark Friedenbach ]
     * Fix bug resulting in indeterminate rounding, resulting in incorrect
@@ -135,7 +135,7 @@ freicoin (0.0.0+1beta5~precise3) precise; urgency=low
 
  -- Mark Friedenbach <mark@monetize.io>  Thu, 7 Dec 2012 18:00:00 -0800
 
-freicoin (0.0.0+1beta5~precise2) precise; urgency=low
+x (0.0.0+1beta5~precise2) precise; urgency=low
 
   [ Mark Friedenbach ]
     * Restructure calls to GMP and MPFR API's so as to maintain computability
@@ -144,7 +144,7 @@ freicoin (0.0.0+1beta5~precise2) precise; urgency=low
 
  -- Mark Friedenbach <mark@monetize.io>  Wed, 6 Dec 2012 12:00:00 -0800
 
-freicoin (0.0.0+1beta5~precise1) precise; urgency=low
+x (0.0.0+1beta5~precise1) precise; urgency=low
 
   [ Mark Friedenbach ]
     * Switch bitcoin internals to use arbitrary-precision rational numbers for
@@ -154,7 +154,7 @@ freicoin (0.0.0+1beta5~precise1) precise; urgency=low
 
  -- Mark Friedenbach <mark@monetize.io>  Wed, 5 Dec 2012 12:00:00 -0800
 
-freicoin (0.0.0+1beta4~precise1) precise; urgency=low
+x (0.0.0+1beta4~precise1) precise; urgency=low
 
   [ Mark Friedenbach ]
     * Added a transaction-fee budget (currently empty) for possible future
@@ -162,13 +162,13 @@ freicoin (0.0.0+1beta4~precise1) precise; urgency=low
       would assay taxes from the transaction-fee budget.
     * Added compatibility with nVesion=1 transactions. This is for possible
       future Bitcoin compatibility only, as it is exceedingly unlikely that
-      these could ever see use on the Freicoin network.
+      these could ever see use on the Xcoin network.
     * Modified the transaction-generating code to take the reference height as
       a parameter, falling back on nBestHeight if it is not specified. The
       user-interface code currently passes nBestHeight without exposing
       refheight-setting functionality.
     * Examined failing tests and fixed some, removed the others that were
-      specific to Bitcoin. `test_freicoin` now executes without error.
+      specific to Bitcoin. `test_x` now executes without error.
     * Created gitian release scripts for generated Linux, Windows zip, and
       Windows installer packages.
     * Updated vagrant-based gitian build process to work with new 0.7.x
@@ -178,18 +178,18 @@ freicoin (0.0.0+1beta4~precise1) precise; urgency=low
 
  -- Mark Friedenbach <mark@monetize.io>  Wed, 28 Nov 2012 14:42:01 -0700
 
-freicoin (0.0.0+1beta3~precise2) precise; urgency=low
+x (0.0.0+1beta3~precise2) precise; urgency=low
 
   [ Mark Friedenbach ]
     * Created new genesis block and magic byte protocol headers for beta3
       release.
-    * Implemented subsidy of charitable causes via the Freicoin Foundation,
+    * Implemented subsidy of charitable causes via the Xcoin Foundation,
       with a 4:1 split of the initial distribution to addresses held in escrow
       for future disbursement.
     * Lowered the monetary base to 16 digits of precision, so that amounts may
       be tracked with accuracy of a single satoshi using the decimal64 type.
     * Fixed bug where allowed coin generation values were not being compared
-      at the same reference height. Due to the way Freicoin works, if
+      at the same reference height. Due to the way Xcoin works, if
       encountered this would have only resulted in a block claiming less coins
       than it could have if it has used the correct reference height.
     * Fixed time-traveller attack, courtesy of Art Fortz.
@@ -198,7 +198,7 @@ freicoin (0.0.0+1beta3~precise2) precise; urgency=low
 
  -- Mark Friedenbach <mark@monetize.io>  Wed, 19 Nov 2012 15:55:30 -0700
 
-freicoin (0.0.0+1beta2~precise3) precise; urgency=low
+x (0.0.0+1beta2~precise3) precise; urgency=low
 
   [ Mark Friedenbach ]
     * Merged with upstream commit 485d667 from the Bitcoin source tree, just a
@@ -212,7 +212,7 @@ freicoin (0.0.0+1beta2~precise3) precise; urgency=low
 
  -- Mark Friedenbach <mark@monetize.io>  Wed, 24 Oct 2012 16:51:12 -0700
 
-freicoin (0.0.0+1beta2~precise2) precise; urgency=low
+x (0.0.0+1beta2~precise2) precise; urgency=low
 
   [ Mark Friedenbach ]
     * Rebuilt genesis block using new transaction format (32-bit RefHeight
@@ -257,7 +257,7 @@ freicoin (0.0.0+1beta2~precise2) precise; urgency=low
       test for the second beta, with the option kept to revert before final
       release. A new genesis block still needs to be created.
     * Explicitly set genesis block's nVersion field to 2, for clarity.
-    * Increased size of “About Freicoin-Qt” dialog box, to account for extra
+    * Increased size of “About Xcoin-Qt” dialog box, to account for extra
       copyright line.
     * Added “Ref-height” column to “Transactions” tab, showing the reference
       height for the transaction, with a field for restricting transactions
@@ -269,15 +269,15 @@ freicoin (0.0.0+1beta2~precise2) precise; urgency=low
 
  -- Mark Friedenbach <mark@monetize.io>  Sat, 14 Sep 2012 04:37:28 -0700
 
-freicoin (0.0.0+1beta1~precise3) precise; urgency=low
+x (0.0.0+1beta1~precise3) precise; urgency=low
 
   [ Mark Friedenbach ]
-  * Removed dependency on Qt 4.7 API, so that Freicoin-Qt can be built by the
+  * Removed dependency on Qt 4.7 API, so that Xcoin-Qt can be built by the
     Launchpad PPA for Ubuntu 10.04 LTS (lucid).
 
  -- Mark Friedenbach <mark@monetize.io>  Sat, 1 Sep 2012 02:09:50 -0700
 
-freicoin (0.0.0+1beta1~precise2) precise; urgency=low
+x (0.0.0+1beta1~precise2) precise; urgency=low
 
   [ Mark Friedenbach ]
   * Switched MPFR_ rounding constants to GMP_, for compatibility with MPFR
@@ -285,16 +285,16 @@ freicoin (0.0.0+1beta1~precise2) precise; urgency=low
 
  -- Mark Friedenbach <mark@monetize.io>  Wed, 30 Aug 2012 13:57:48 -0700
 
-freicoin (0.0.0+1beta1~precise1) precise; urgency=low
+x (0.0.0+1beta1~precise1) precise; urgency=low
 
   [ Mark Friedenbach ]
-  * Replaced bitcoin icons with new Freicoin icons provided by Aaron
+  * Replaced bitcoin icons with new Xcoin icons provided by Aaron
     Blumenshine <aaron@monetize.io>.
   * Updated DNS and IP seed lists.
 
  -- Mark Friedenbach <mark@monetize.io>  Wed, 30 Aug 2012 13:57:48 -0700
 
-freicoin (0.0.0+1alpha1~precise7) precise; urgency=low
+x (0.0.0+1alpha1~precise7) precise; urgency=low
 
   [ Mark Friedenbach ]
   * Initial release.

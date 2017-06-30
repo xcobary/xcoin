@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>About Freicoin</string>
+   <string>About Xcoin</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
@@ -23,7 +23,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../freicoin.qrc">:/images/about</pixmap>
+      <pixmap resource="../x.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -50,7 +50,7 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string>&lt;b&gt;Freicoin&lt;/b&gt; version</string>
+          <string>&lt;b&gt;Xcoin&lt;/b&gt; version</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -92,13 +92,13 @@
        </property>
        <property name="text">
         <string>Copyright © 2009-2012 Bitcoin developers
-Copyright © 2011-2012 Freicoin developers
+Copyright © 2011-2012 Xcoin developers
 
 The conceptual marriage of Gesell's Freigeld with Bitcoin is due to one individual without whom this project would never have started: Jorge Timón. The initial release would not have been possible without further contributions from developers Mark Friedenbach, Matthew Redmond, Aaron Blumenshine, and an anonymous contributor.
 
-The initial development of Freicoin was made possible through generous financial support from Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis, Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O'Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk, and anonymous supporters.
+The initial development of Xcoin was made possible through generous financial support from Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis, Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O'Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk, and anonymous supporters.
 
-Last but certainly not least, we all owe a debt to the legacy of Silvio Gesell, as it is upon his theory of free money that Freicoin is built.</string>
+Last but certainly not least, we all owe a debt to the legacy of Silvio Gesell, as it is upon his theory of free money that Xcoin is built.</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -157,7 +157,7 @@ This product includes software developed by the OpenSSL Project for use in the O
   </layout>
  </widget>
  <resources>
-  <include location="../freicoin.qrc"/>
+  <include location="../x.qrc"/>
  </resources>
  <connections>
   <connection>

@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="false">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6cae2d9b-afdf-4035-8f79-20ef3447e771" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/COPYING" afterPath="$PROJECT_DIR$/COPYING" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/INSTALL" afterPath="$PROJECT_DIR$/INSTALL" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/bitrpc/bitrpc.py" afterPath="$PROJECT_DIR$/contrib/bitrpc/bitrpc.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/bin/freicoind" afterPath="$PROJECT_DIR$/contrib/debian/bin/freicoind" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/changelog" afterPath="$PROJECT_DIR$/contrib/debian/changelog" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/control" afterPath="$PROJECT_DIR$/contrib/debian/control" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/copyright" afterPath="$PROJECT_DIR$/contrib/debian/copyright" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/examples/freicoin.conf" afterPath="$PROJECT_DIR$/contrib/debian/examples/freicoin.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/freicoin-qt.desktop" afterPath="$PROJECT_DIR$/contrib/debian/freicoin-qt.desktop" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/freicoin-qt.install" afterPath="$PROJECT_DIR$/contrib/debian/freicoin-qt.install" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/freicoin-qt.lintian-overrides" afterPath="$PROJECT_DIR$/contrib/debian/freicoin-qt.lintian-overrides" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/freicoin-qt.protocol" afterPath="$PROJECT_DIR$/contrib/debian/freicoin-qt.protocol" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/freicoind.bash-completion" afterPath="$PROJECT_DIR$/contrib/debian/freicoind.bash-completion" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/freicoind.examples" afterPath="$PROJECT_DIR$/contrib/debian/freicoind.examples" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/freicoind.install" afterPath="$PROJECT_DIR$/contrib/debian/freicoind.install" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/freicoind.lintian-overrides" afterPath="$PROJECT_DIR$/contrib/debian/freicoind.lintian-overrides" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/freicoind.manpages" afterPath="$PROJECT_DIR$/contrib/debian/freicoind.manpages" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/manpages/freicoin.conf.5" afterPath="$PROJECT_DIR$/contrib/debian/manpages/freicoin.conf.5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/manpages/freicoind.1" afterPath="$PROJECT_DIR$/contrib/debian/manpages/freicoind.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/rules" afterPath="$PROJECT_DIR$/contrib/debian/rules" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/debian/watch" afterPath="$PROJECT_DIR$/contrib/debian/watch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/freicoind.bash-completion" afterPath="$PROJECT_DIR$/contrib/freicoind.bash-completion" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-descriptors/README" afterPath="$PROJECT_DIR$/contrib/gitian-descriptors/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/i686-apple-darwin10.yml" afterPath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/i686-apple-darwin10.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/i686-pc-linux-gnu.yml" afterPath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/i686-pc-linux-gnu.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/i686-static-mingw32.yml" afterPath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/i686-static-mingw32.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/x86_64-apple-darwin10.yml" afterPath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/x86_64-apple-darwin10.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/x86_64-pc-linux-gnu.yml" afterPath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/x86_64-pc-linux-gnu.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/x86_64-static-mingw32.yml" afterPath="$PROJECT_DIR$/contrib/gitian-descriptors/freicoind/x86_64-static-mingw32.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-descriptors/release/linux-tar-xz.yml" afterPath="$PROJECT_DIR$/contrib/gitian-descriptors/release/linux-tar-xz.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-descriptors/release/windows-setup.yml" afterPath="$PROJECT_DIR$/contrib/gitian-descriptors/release/windows-setup.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-descriptors/release/windows-zip.yml" afterPath="$PROJECT_DIR$/contrib/gitian-descriptors/release/windows-zip.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-downloader/linux-download-config" afterPath="$PROJECT_DIR$/contrib/gitian-downloader/linux-download-config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/gitian-downloader/win32-download-config" afterPath="$PROJECT_DIR$/contrib/gitian-downloader/win32-download-config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/macdeploy/fancy.plist" afterPath="$PROJECT_DIR$/contrib/macdeploy/fancy.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/macdeploy/notes.txt" afterPath="$PROJECT_DIR$/contrib/macdeploy/notes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/pyminer/README" afterPath="$PROJECT_DIR$/contrib/pyminer/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/pyminer/pyminer.py" afterPath="$PROJECT_DIR$/contrib/pyminer/pyminer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/qt_translations.py" afterPath="$PROJECT_DIR$/contrib/qt_translations.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/vagrant/README.md" afterPath="$PROJECT_DIR$/contrib/vagrant/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contrib/vagrant/Vagrantfile" afterPath="$PROJECT_DIR$/contrib/vagrant/Vagrantfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/Doxyfile" afterPath="$PROJECT_DIR$/doc/Doxyfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/README" afterPath="$PROJECT_DIR$/doc/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/README_windows.txt" afterPath="$PROJECT_DIR$/doc/README_windows.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/Tor.txt" afterPath="$PROJECT_DIR$/doc/Tor.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/assets-attribution.txt" afterPath="$PROJECT_DIR$/doc/assets-attribution.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/build-msw.txt" afterPath="$PROJECT_DIR$/doc/build-msw.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/build-osx.txt" afterPath="$PROJECT_DIR$/doc/build-osx.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/build-unix.txt" afterPath="$PROJECT_DIR$/doc/build-unix.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/coding.txt" afterPath="$PROJECT_DIR$/doc/coding.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/readme-qt.rst" afterPath="$PROJECT_DIR$/doc/readme-qt.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/release-process.txt" afterPath="$PROJECT_DIR$/doc/release-process.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/translation_process.md" afterPath="$PROJECT_DIR$/doc/translation_process.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/unit-tests.txt" afterPath="$PROJECT_DIR$/doc/unit-tests.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freicoin-qt.pro" afterPath="$PROJECT_DIR$/freicoin-qt.pro" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/difficulty_adjustment/simulator.py" afterPath="$PROJECT_DIR$/share/difficulty_adjustment/simulator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/qt/extract_strings_qt.py" afterPath="$PROJECT_DIR$/share/qt/extract_strings_qt.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/qt/make_windows_icon.sh" afterPath="$PROJECT_DIR$/share/qt/make_windows_icon.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/setup.nsi" afterPath="$PROJECT_DIR$/share/setup.nsi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/share/ui.rc" afterPath="$PROJECT_DIR$/share/ui.rc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/addrman.h" afterPath="$PROJECT_DIR$/src/addrman.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/allocators.h" afterPath="$PROJECT_DIR$/src/allocators.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/base58.h" afterPath="$PROJECT_DIR$/src/base58.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bignum.h" afterPath="$PROJECT_DIR$/src/bignum.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/checkpoints.h" afterPath="$PROJECT_DIR$/src/checkpoints.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clientversion.h" afterPath="$PROJECT_DIR$/src/clientversion.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/compat.h" afterPath="$PROJECT_DIR$/src/compat.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.h" afterPath="$PROJECT_DIR$/src/db.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/freicoinrpc.cpp" afterPath="$PROJECT_DIR$/src/freicoinrpc.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/freicoinrpc.h" afterPath="$PROJECT_DIR$/src/freicoinrpc.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/init.cpp" afterPath="$PROJECT_DIR$/src/init.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/init.h" afterPath="$PROJECT_DIR$/src/init.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/irc.cpp" afterPath="$PROJECT_DIR$/src/irc.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/irc.h" afterPath="$PROJECT_DIR$/src/irc.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/json/json_spirit_value.h" afterPath="$PROJECT_DIR$/src/json/json_spirit_value.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/json/json_spirit_writer_template.h" afterPath="$PROJECT_DIR$/src/json/json_spirit_writer_template.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/key.h" afterPath="$PROJECT_DIR$/src/key.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/keystore.h" afterPath="$PROJECT_DIR$/src/keystore.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.h" afterPath="$PROJECT_DIR$/src/main.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/makefile.linux-mingw" afterPath="$PROJECT_DIR$/src/makefile.linux-mingw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/makefile.mingw" afterPath="$PROJECT_DIR$/src/makefile.mingw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/makefile.osx" afterPath="$PROJECT_DIR$/src/makefile.osx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/makefile.unix" afterPath="$PROJECT_DIR$/src/makefile.unix" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mruset.h" afterPath="$PROJECT_DIR$/src/mruset.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net.cpp" afterPath="$PROJECT_DIR$/src/net.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net.h" afterPath="$PROJECT_DIR$/src/net.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/netbase.h" afterPath="$PROJECT_DIR$/src/netbase.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/noui.cpp" afterPath="$PROJECT_DIR$/src/noui.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/protocol.h" afterPath="$PROJECT_DIR$/src/protocol.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/addressbookpage.cpp" afterPath="$PROJECT_DIR$/src/qt/addressbookpage.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/addresstablemodel.cpp" afterPath="$PROJECT_DIR$/src/qt/addresstablemodel.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/addresstablemodel.h" afterPath="$PROJECT_DIR$/src/qt/addresstablemodel.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/askpassphrasedialog.cpp" afterPath="$PROJECT_DIR$/src/qt/askpassphrasedialog.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/clientmodel.h" afterPath="$PROJECT_DIR$/src/qt/clientmodel.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/editaddressdialog.cpp" afterPath="$PROJECT_DIR$/src/qt/editaddressdialog.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/forms/aboutdialog.ui" afterPath="$PROJECT_DIR$/src/qt/forms/aboutdialog.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/forms/addressbookpage.ui" afterPath="$PROJECT_DIR$/src/qt/forms/addressbookpage.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/forms/optionsdialog.ui" afterPath="$PROJECT_DIR$/src/qt/forms/optionsdialog.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/forms/overviewpage.ui" afterPath="$PROJECT_DIR$/src/qt/forms/overviewpage.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/forms/qrcodedialog.ui" afterPath="$PROJECT_DIR$/src/qt/forms/qrcodedialog.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/forms/rpcconsole.ui" afterPath="$PROJECT_DIR$/src/qt/forms/rpcconsole.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/forms/sendcoinsdialog.ui" afterPath="$PROJECT_DIR$/src/qt/forms/sendcoinsdialog.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/forms/sendcoinsentry.ui" afterPath="$PROJECT_DIR$/src/qt/forms/sendcoinsentry.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/forms/signverifymessagedialog.ui" afterPath="$PROJECT_DIR$/src/qt/forms/signverifymessagedialog.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/freicoin.cpp" afterPath="$PROJECT_DIR$/src/qt/freicoin.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/freicoin.qrc" afterPath="$PROJECT_DIR$/src/qt/freicoin.qrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/freicoinaddressvalidator.cpp" afterPath="$PROJECT_DIR$/src/qt/freicoinaddressvalidator.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/freicoinaddressvalidator.h" afterPath="$PROJECT_DIR$/src/qt/freicoinaddressvalidator.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/freicoinamountfield.cpp" afterPath="$PROJECT_DIR$/src/qt/freicoinamountfield.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/freicoinamountfield.h" afterPath="$PROJECT_DIR$/src/qt/freicoinamountfield.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/freicoingui.cpp" afterPath="$PROJECT_DIR$/src/qt/freicoingui.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/freicoingui.h" afterPath="$PROJECT_DIR$/src/qt/freicoingui.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/freicoinstrings.cpp" afterPath="$PROJECT_DIR$/src/qt/freicoinstrings.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/freicoinunits.cpp" afterPath="$PROJECT_DIR$/src/qt/freicoinunits.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/freicoinunits.h" afterPath="$PROJECT_DIR$/src/qt/freicoinunits.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/guiconstants.h" afterPath="$PROJECT_DIR$/src/qt/guiconstants.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/guiutil.cpp" afterPath="$PROJECT_DIR$/src/qt/guiutil.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/guiutil.h" afterPath="$PROJECT_DIR$/src/qt/guiutil.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_bg.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_bg.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_ca_ES.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_ca_ES.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_cs.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_cs.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_da.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_da.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_de.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_de.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_el_GR.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_el_GR.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_en.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_en.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_es.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_es.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_es_CL.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_es_CL.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_et.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_et.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_eu_ES.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_eu_ES.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_fa.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_fa.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_fa_IR.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_fa_IR.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_fi.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_fi.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_fr.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_fr.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_fr_CA.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_fr_CA.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_he.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_he.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_hr.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_hr.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_hu.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_hu.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_it.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_it.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_lt.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_lt.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_nb.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_nb.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_nl.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_nl.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_pl.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_pl.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_pt_BR.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_pt_BR.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_pt_PT.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_pt_PT.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_ro_RO.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_ro_RO.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_ru.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_ru.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_sk.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_sk.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_sr.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_sr.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_sv.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_sv.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_tr.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_tr.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_uk.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_uk.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_zh_CN.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_zh_CN.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/locale/freicoin_zh_TW.ts" afterPath="$PROJECT_DIR$/src/qt/locale/freicoin_zh_TW.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/optionsdialog.cpp" afterPath="$PROJECT_DIR$/src/qt/optionsdialog.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/optionsmodel.cpp" afterPath="$PROJECT_DIR$/src/qt/optionsmodel.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/optionsmodel.h" afterPath="$PROJECT_DIR$/src/qt/optionsmodel.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/overviewpage.cpp" afterPath="$PROJECT_DIR$/src/qt/overviewpage.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/qrcodedialog.cpp" afterPath="$PROJECT_DIR$/src/qt/qrcodedialog.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/qtipcserver.cpp" afterPath="$PROJECT_DIR$/src/qt/qtipcserver.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/qtipcserver.h" afterPath="$PROJECT_DIR$/src/qt/qtipcserver.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/res/freicoin-qt.rc" afterPath="$PROJECT_DIR$/src/qt/res/freicoin-qt.rc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/res/src/inout.svg" afterPath="$PROJECT_DIR$/src/qt/res/src/inout.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/res/src/questionmark.svg" afterPath="$PROJECT_DIR$/src/qt/res/src/questionmark.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/rpcconsole.cpp" afterPath="$PROJECT_DIR$/src/qt/rpcconsole.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/rpcconsole.h" afterPath="$PROJECT_DIR$/src/qt/rpcconsole.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/sendcoinsdialog.cpp" afterPath="$PROJECT_DIR$/src/qt/sendcoinsdialog.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/sendcoinsdialog.h" afterPath="$PROJECT_DIR$/src/qt/sendcoinsdialog.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/sendcoinsentry.cpp" afterPath="$PROJECT_DIR$/src/qt/sendcoinsentry.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/sendcoinsentry.h" afterPath="$PROJECT_DIR$/src/qt/sendcoinsentry.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/signverifymessagedialog.cpp" afterPath="$PROJECT_DIR$/src/qt/signverifymessagedialog.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/test/uritests.cpp" afterPath="$PROJECT_DIR$/src/qt/test/uritests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/transactiondesc.cpp" afterPath="$PROJECT_DIR$/src/qt/transactiondesc.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/transactionrecord.cpp" afterPath="$PROJECT_DIR$/src/qt/transactionrecord.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/transactiontablemodel.cpp" afterPath="$PROJECT_DIR$/src/qt/transactiontablemodel.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/transactionview.cpp" afterPath="$PROJECT_DIR$/src/qt/transactionview.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/walletmodel.cpp" afterPath="$PROJECT_DIR$/src/qt/walletmodel.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qt/walletmodel.h" afterPath="$PROJECT_DIR$/src/qt/walletmodel.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rpcblockchain.cpp" afterPath="$PROJECT_DIR$/src/rpcblockchain.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rpcdump.cpp" afterPath="$PROJECT_DIR$/src/rpcdump.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rpcmining.cpp" afterPath="$PROJECT_DIR$/src/rpcmining.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rpcnet.cpp" afterPath="$PROJECT_DIR$/src/rpcnet.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rpcrawtransaction.cpp" afterPath="$PROJECT_DIR$/src/rpcrawtransaction.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rpcwallet.cpp" afterPath="$PROJECT_DIR$/src/rpcwallet.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script.cpp" afterPath="$PROJECT_DIR$/src/script.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script.h" afterPath="$PROJECT_DIR$/src/script.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/serialize.h" afterPath="$PROJECT_DIR$/src/serialize.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sync.h" afterPath="$PROJECT_DIR$/src/sync.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/DoS_tests.cpp" afterPath="$PROJECT_DIR$/src/test/DoS_tests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/README" afterPath="$PROJECT_DIR$/src/test/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/base58_tests.cpp" afterPath="$PROJECT_DIR$/src/test/base58_tests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/getarg_tests.cpp" afterPath="$PROJECT_DIR$/src/test/getarg_tests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/key_tests.cpp" afterPath="$PROJECT_DIR$/src/test/key_tests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/netbase_tests.cpp" afterPath="$PROJECT_DIR$/src/test/netbase_tests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/rpc_tests.cpp" afterPath="$PROJECT_DIR$/src/test/rpc_tests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/test_freicoin.cpp" afterPath="$PROJECT_DIR$/src/test/test_freicoin.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/util_tests.cpp" afterPath="$PROJECT_DIR$/src/test/util_tests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/wallet_tests.cpp" afterPath="$PROJECT_DIR$/src/test/wallet_tests.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui_interface.h" afterPath="$PROJECT_DIR$/src/ui_interface.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/uint256.h" afterPath="$PROJECT_DIR$/src/uint256.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util.cpp" afterPath="$PROJECT_DIR$/src/util.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util.h" afterPath="$PROJECT_DIR$/src/util.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/version.cpp" afterPath="$PROJECT_DIR$/src/version.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/version.h" afterPath="$PROJECT_DIR$/src/version.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wallet.cpp" afterPath="$PROJECT_DIR$/src/wallet.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wallet.h" afterPath="$PROJECT_DIR$/src/wallet.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/walletdb.cpp" afterPath="$PROJECT_DIR$/src/walletdb.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/walletdb.h" afterPath="$PROJECT_DIR$/src/walletdb.h" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="xcoin" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="changelog" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contrib/debian/changelog">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-374">
+              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="freicoinrpc.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/freicoinrpc.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="1062" column="84" lean-forward="false" selection-start-line="1062" selection-start-column="84" selection-end-line="1062" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/init.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="275" column="98" lean-forward="false" selection-start-line="275" selection-start-column="98" selection-end-line="275" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="protocol.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/protocol.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="net.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1659">
+              <caret line="1179" column="17" lean-forward="false" selection-start-line="1179" selection-start-column="17" selection-end-line="1179" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="2751" column="62" lean-forward="false" selection-start-line="2751" selection-start-column="62" selection-end-line="2751" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base58.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base58.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="278" column="26" lean-forward="false" selection-start-line="278" selection-start-column="26" selection-end-line="278" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Freicoin</find>
+      <find>freicoin</find>
+      <find>FREICOIN</find>
+      <find>FRC</find>
+      <find>ip::tcp::endpoint endpoint</find>
+      <find>if (!d.connect(GetArg(</find>
+      <find>-port=</find>
+      <find>-rpcport</find>
+      <find>testnet</find>
+      <find>some website nam</find>
+      <find>int64 nS</find>
+      <find>nTargetTimespan</find>
+      <find>MAX_MONEY</find>
+      <find>PUBKEY_ADDRESS</find>
+      <find>block.nTime</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Xcoin</replace>
+      <replace>x</replace>
+      <replace>XCOIN</replace>
+      <replace>XCN</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/COPYING" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/contrib/debian/manpages/freicoin.conf.5" />
+        <option value="$PROJECT_DIR$/contrib/debian/changelog" />
+        <option value="$PROJECT_DIR$/src/freicoinrpc.cpp" />
+        <option value="$PROJECT_DIR$/src/init.cpp" />
+        <option value="$PROJECT_DIR$/src/protocol.h" />
+        <option value="$PROJECT_DIR$/src/base58.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1023" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xcoin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmake-build-debug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMakeFiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="SearchEverywhereHistoryKey" value="main.cpp&#9;FILE&#9;file:///Users/jay/code/xcoin/src/main.cpp" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cae2d9b-afdf-4035-8f79-20ef3447e771" name="Default" comment="" />
+      <created>1498846037726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1498846037726</updated>
+      <workItem from="1498846040085" duration="5490000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5490000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="1023" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/contrib/debian/manpages/freicoin.conf.5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COPYING">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/freicoinrpc.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contrib/debian/changelog">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/freicoinrpc.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="1062" column="84" lean-forward="false" selection-start-line="1062" selection-start-column="84" selection-end-line="1062" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/init.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="275" column="98" lean-forward="false" selection-start-line="275" selection-start-column="98" selection-end-line="275" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/protocol.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1659">
+          <caret line="1179" column="17" lean-forward="false" selection-start-line="1179" selection-start-column="17" selection-end-line="1179" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base58.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="278" column="26" lean-forward="false" selection-start-line="278" selection-start-column="26" selection-end-line="278" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="2751" column="62" lean-forward="false" selection-start-line="2751" selection-start-column="62" selection-end-line="2751" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -23,7 +23,7 @@ public:
     mpq amount;
 };
 
-/** Interface to Freicoin wallet from Qt view code. */
+/** Interface to Xcoin wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT

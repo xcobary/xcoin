@@ -5,7 +5,7 @@
 
 #include <QAbstractListModel>
 
-/** Interface from Qt to configuration data structure for Freicoin client.
+/** Interface from Qt to configuration data structure for Xcoin client.
    To Qt, the options are presented as a list with the different options
    laid out vertically.
    This can be changed to a tree once the settings become sufficiently
@@ -28,7 +28,7 @@ public:
         ProxyPort,         // int
         ProxySocksVersion, // int
         Fee,               // mpq serialized as QString
-        DisplayUnit,       // FreicoinUnits::Unit
+        DisplayUnit,       // XcoinUnits::Unit
         DisplayAddresses,  // bool
         DetachDatabases,   // bool
         Language,          // QString

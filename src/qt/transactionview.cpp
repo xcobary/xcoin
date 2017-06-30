@@ -5,7 +5,7 @@
 #include "walletmodel.h"
 #include "addresstablemodel.h"
 #include "transactiontablemodel.h"
-#include "freicoinunits.h"
+#include "xunits.h"
 #include "csvmodelwriter.h"
 #include "transactiondescdialog.h"
 #include "editaddressdialog.h"
@@ -268,7 +268,7 @@ void TransactionView::changedAmount(const QString &amount)
     if(!transactionProxyModel)
         return;
     mpq amount_parsed = 0;
-    if(FreicoinUnits::parse(model->getOptionsModel()->getDisplayUnit(), amount, &amount_parsed))
+    if(XcoinUnits::parse(model->getOptionsModel()->getDisplayUnit(), amount, &amount_parsed))
     {
         transactionProxyModel->setMinAmount(amount_parsed);
     }

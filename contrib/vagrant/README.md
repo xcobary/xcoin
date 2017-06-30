@@ -1,8 +1,8 @@
 Automated Gitian builds with Vagrant
 ====================================
 
-This directory contains platform-independent scripts for building freicoind
-and freicoin-QT using the deterministic Gitian build process.
+This directory contains platform-independent scripts for building xd
+and x-QT using the deterministic Gitian build process.
 
 Dependencies
 ------------

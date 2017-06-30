@@ -1,4 +1,4 @@
-Source: freicoin
+Source: x
 Section: utils
 Priority: optional
 Maintainer: Mark Friedenbach <mark@monetize.io>
@@ -23,38 +23,38 @@ Build-Depends: debhelper,
  libgmp3-dev
 Standards-Version: 3.9.2
 Homepage: http://freico.in/
-Vcs-Git: git://github.com/freicoin/freicoin.git
-Vcs-Browser: http://github.com/freicoin/freicoin
+Vcs-Git: git://github.com/x/x.git
+Vcs-Browser: http://github.com/x/x
 
-Package: freicoind
+Package: xd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based demurrage currency - daemon
- Freicoin is a free open source peer-to-peer electronic cash system that
+ Xcoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
- check for double-spending.  Freicoin features built-in demurrage to
+ check for double-spending.  Xcoin features built-in demurrage to
  encourage long-term thinking, low interest rates, and a high velocity
  of money.
  .
  Full transaction history is stored locally at each client.
  .
- This package provides freicoind, a combined daemon and CLI tool to
+ This package provides xd, a combined daemon and CLI tool to
  interact with the daemon.
 
-Package: freicoin-qt
+Package: x-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based demurrage currency - Qt GUI
- Freicoin is a free open source peer-to-peer electronic cash system that
+ Xcoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
- check for double-spending.  Freicoin features built-in demurrage to
+ check for double-spending.  Xcoin features built-in demurrage to
  encourage long-term thinking, low interest rates, and a high velocity
  of money.
  .
  Full transaction history is stored locally at each client.
  .
- This package provides Freicoin-Qt, a GUI for Freicoin based on Qt.
+ This package provides Xcoin-Qt, a GUI for Xcoin based on Qt.

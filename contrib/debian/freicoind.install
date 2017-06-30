@@ -1,2 +1,2 @@
-debian/bin/freicoind usr/bin
-src/freicoind usr/lib/freicoin
+debian/bin/xd usr/bin
+src/xd usr/lib/x

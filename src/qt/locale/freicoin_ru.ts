@@ -6,32 +6,32 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Freicoin</source>
-        <translation>О Freicoin</translation>
+        <source>About Xcoin</source>
+        <translation>О Xcoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Freicoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Freicoin&lt;/b&gt; версии</translation>
+        <source>&lt;b&gt;Xcoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Xcoin&lt;/b&gt; версии</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2012 Bitcoin developers
-Copyright © 2011-2012 Freicoin developers
+Copyright © 2011-2012 Xcoin developers
 
 The conceptual marriage of Gesell&apos;s Freigeld with Bitcoin is due to one individual without whom this project would never have started: Jorge Timón. The initial release would not have been possible without further contributions from developers Mark Friedenbach, Matthew Redmond, Aaron Blumenshine, and an anonymous contributor.
 
-The initial development of Freicoin was made possible through generous financial support from Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis, Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O&apos;Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk, and anonymous supporters.
+The initial development of Xcoin was made possible through generous financial support from Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis, Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O&apos;Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk, and anonymous supporters.
 
-Last but certainly not least, we all owe a debt to the legacy of Silvio Gesell, as it is upon his theory of free money that Freicoin is built.</source>
+Last but certainly not least, we all owe a debt to the legacy of Silvio Gesell, as it is upon his theory of free money that Xcoin is built.</source>
         <translation>Copyright © 2009-2012 Разработчики Bitcoin
-Copyright © 2011-2012 Разработчики Freicoin
+Copyright © 2011-2012 Разработчики Xcoin
 
 Концептуальное объединение свободных денег Сильвио Гезеля и Биткоин произошло благодаря одному человеку, без которого данный проект даже не начался бы: Jorge Timón. Начальный релиз не был бы возможен без дальнейших усилий разработчиков Mark Friedenbach, Matthew Redmond, Aaron Blumenshine, и анонимного участника.
 
-Первоначальная разработка Freicoin осуществлялась с великодушной финансовой поддержкой Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis, Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O&apos;Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk, и анонимных спонсоров.
+Первоначальная разработка Xcoin осуществлялась с великодушной финансовой поддержкой Martin Auer, Matthew Redmond, Carsten Langer, Manolis Afentakis, Dave Berzack, Marco Bluethgen, Jamie Derkenne, Josef Dietl, Claas Kähler, Alex Glaser, Trent Larson, James O&apos;Keefe, David Rodrigues, Lucas Vázquez Besteiro, Reinoud Zandijk, и анонимных спонсоров.
 
-И наконец, мы все в долгу перед стариной Сильвио Гезелем, так как именно его теорию свободных денег использует Freicoin.</translation>
+И наконец, мы все в долгу перед стариной Сильвио Гезелем, так как именно его теорию свободных денег использует Xcoin.</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -58,8 +58,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+6"/>
-        <source>These are your Freicoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Здесь ваши адреса Freicoin для получения платежей. Вы можете захотеть указать разные для каждого отправителя, чтобы отслеживать кто платит вам</translation>
+        <source>These are your Xcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Здесь ваши адреса Xcoin для получения платежей. Вы можете захотеть указать разные для каждого отправителя, чтобы отслеживать кто платит вам</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -78,8 +78,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+25"/>
-        <source>Sign a message to prove you own a Freicoin address</source>
-        <translation>Подписать сообщение для доказательства, что вы владеете адресом Freicoin</translation>
+        <source>Sign a message to prove you own a Xcoin address</source>
+        <translation>Подписать сообщение для доказательства, что вы владеете адресом Xcoin</translation>
     </message>
     <message>
         <location line="-36"/>
@@ -103,8 +103,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Verify a message to ensure it was signed with a specified Freicoin address</source>
-        <translation>Проверить сообщение для удостоверения, что оно было подписано указанным адресом Freicoin</translation>
+        <source>Verify a message to ensure it was signed with a specified Xcoin address</source>
+        <translation>Проверить сообщение для удостоверения, что оно было подписано указанным адресом Xcoin</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -244,13 +244,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FREICOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XCOINS&lt;/b&gt;!</source>
         <translation>Предупреждение: если вы зашифровали свой кошелек и забудете свою кодовую фразу, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ ФРЕЙКОИНЫ&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Freicoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your freicoins from being stolen by malware infecting your computer.</source>
-        <translation>Freicoin закроется сейчас чтобы завершить процесс зашифровки. Помните, что зашифровав свой кошелек, вы не сможете полностью защитить свои фрейкоины от кражи вредоносным ПО, заражающим ваш компьютер.</translation>
+        <source>Xcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your xs from being stolen by malware infecting your computer.</source>
+        <translation>Xcoin закроется сейчас чтобы завершить процесс зашифровки. Помните, что зашифровав свой кошелек, вы не сможете полностью защитить свои фрейкоины от кражи вредоносным ПО, заражающим ваш компьютер.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -373,8 +373,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Freicoin address.</source>
-        <translation>Введенный адрес &quot;%1&quot; не является корректным адресом Freicoin.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Xcoin address.</source>
+        <translation>Введенный адрес &quot;%1&quot; не является корректным адресом Xcoin.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -388,16 +388,16 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
 </context>
 <context>
-    <name>FreicoinGUI</name>
+    <name>XcoinGUI</name>
     <message>
-        <location filename="../freicoin.cpp" line="+109"/>
-        <source>A fatal error occured. Freicoin can no longer continue safely and will quit.</source>
-        <translation>Случилась фатальная ошибка. Freicoin не может далее благополучно функционировать и будет закрыт.</translation>
+        <location filename="../x.cpp" line="+109"/>
+        <source>A fatal error occured. Xcoin can no longer continue safely and will quit.</source>
+        <translation>Случилась фатальная ошибка. Xcoin не может далее благополучно функционировать и будет закрыт.</translation>
     </message>
     <message>
-        <location filename="../freicoingui.cpp" line="+74"/>
-        <source>Freicoin</source>
-        <translation>Freicoin</translation>
+        <location filename="../xgui.cpp" line="+74"/>
+        <source>Xcoin</source>
+        <translation>Xcoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -416,8 +416,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+6"/>
-        <source>Send coins to a Freicoin address</source>
-        <translation>Отправить монетки на адрес Freicoin</translation>
+        <source>Send coins to a Xcoin address</source>
+        <translation>Отправить монетки на адрес Xcoin</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -466,13 +466,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;About Freicoin</source>
-        <translation>О &amp;Freicoin</translation>
+        <source>&amp;About Xcoin</source>
+        <translation>О &amp;Xcoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Freicoin</source>
-        <translation>Показать информацию о Freicoin</translation>
+        <source>Show information about Xcoin</source>
+        <translation>Показать информацию о Xcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -491,8 +491,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Modify configuration options for Freicoin</source>
-        <translation>Изменить настроки Freicoin</translation>
+        <source>Modify configuration options for Xcoin</source>
+        <translation>Изменить настроки Xcoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -593,16 +593,16 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>Freicoin client</source>
-        <translation>Клиент Freicoin</translation>
+        <source>Xcoin client</source>
+        <translation>Клиент Xcoin</translation>
     </message>
     <message numerus="yes">
         <location line="+69"/>
-        <source>%n active connection(s) to Freicoin network</source>
+        <source>%n active connection(s) to Xcoin network</source>
         <translation>
-            <numerusform>%n активное соединение с сетью Freicoin</numerusform>
-            <numerusform>%n активных соединения с сетью Freicoin</numerusform>
-            <numerusform>%n активных соединений с сетью Freicoin</numerusform>
+            <numerusform>%n активное соединение с сетью Xcoin</numerusform>
+            <numerusform>%n активных соединения с сетью Xcoin</numerusform>
+            <numerusform>%n активных соединений с сетью Xcoin</numerusform>
         </translation>
     </message>
     <message>
@@ -722,8 +722,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Freicoin address or malformed URI parameters.</source>
-        <translation>URI не может быть разобран! Это может быть вызвано неправильным адресом Freicoin или плохо сформированными параметрами URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Xcoin address or malformed URI parameters.</source>
+        <translation>URI не может быть разобран! Это может быть вызвано неправильным адресом Xcoin или плохо сформированными параметрами URI.</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -766,8 +766,8 @@ Address: %4
     <message>
         <location line="+0"/>
         <location line="+12"/>
-        <source>Freicoin-Qt</source>
-        <translation>Freicoin-Qt</translation>
+        <source>Xcoin-Qt</source>
+        <translation>Xcoin-Qt</translation>
     </message>
     <message>
         <location line="-10"/>
@@ -839,13 +839,13 @@ Address: %4
     </message>
     <message>
         <location line="-43"/>
-        <source>Automatically start Freicoin after logging in to the system.</source>
-        <translation>Автоматически запускать Freicoin после входа в систему.</translation>
+        <source>Automatically start Xcoin after logging in to the system.</source>
+        <translation>Автоматически запускать Xcoin после входа в систему.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Freicoin on system login</source>
-        <translation>&amp;Запускать Freicoin при входе в систему</translation>
+        <source>&amp;Start Xcoin on system login</source>
+        <translation>&amp;Запускать Xcoin при входе в систему</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -854,13 +854,13 @@ Address: %4
     </message>
     <message>
         <location line="+27"/>
-        <source>Automatically open the Freicoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открывать клиентский порт Freicoin на роутере. Это работает если ваш роутер поддерживает UPnP и его поддержка включена.</translation>
+        <source>Automatically open the Xcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открывать клиентский порт Xcoin на роутере. Это работает если ваш роутер поддерживает UPnP и его поддержка включена.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Connect to the Freicoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Соединяться с сетью Freicoin через SOCKS прокси (например при использовании Tor)</translation>
+        <source>Connect to the Xcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Соединяться с сетью Xcoin через SOCKS прокси (например при использовании Tor)</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -929,13 +929,13 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Freicoin.</source>
-        <translation>Здесь может быть установлен язык пользовательского интерфейса. Настройка будет применена после перезапуска Freicoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Xcoin.</source>
+        <translation>Здесь может быть установлен язык пользовательского интерфейса. Настройка будет применена после перезапуска Xcoin.</translation>
     </message>
     <message>
         <location line="+33"/>
-        <source>Whether to show Freicoin addresses in the transaction list or not.</source>
-        <translation>Показывать Freicoin адрес в списке операций или нет.</translation>
+        <source>Whether to show Xcoin addresses in the transaction list or not.</source>
+        <translation>Показывать Xcoin адрес в списке операций или нет.</translation>
     </message>
     <message>
         <location line="-22"/>
@@ -986,8 +986,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Freicoin.</source>
-        <translation>Эта установка будет применена после перезапуска Freicoin.</translation>
+        <source>This setting will take effect after restarting Xcoin.</source>
+        <translation>Эта установка будет применена после перезапуска Xcoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1025,8 +1025,8 @@ Address: %4
     <message>
         <location line="+7"/>
         <location line="+183"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Freicoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Отображаемая информация может быть устаревшей. Ваш кошелек автоматически синхронизируется с сетью Freicoin после установления соединения, но этот процесс еще не завершился.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Xcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Отображаемая информация может быть устаревшей. Ваш кошелек автоматически синхронизируется с сетью Xcoin после установления соединения, но этот процесс еще не завершился.</translation>
     </message>
     <message>
         <location line="-66"/>
@@ -1156,13 +1156,13 @@ Address: %4
     </message>
     <message>
         <location line="-10"/>
-        <source>Freicoin - Debug window</source>
-        <translation>Freicoin - окно отладки</translation>
+        <source>Xcoin - Debug window</source>
+        <translation>Xcoin - окно отладки</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Freicoin Core</source>
-        <translation>Ядро Freicoin</translation>
+        <source>Xcoin Core</source>
+        <translation>Ядро Xcoin</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -1211,8 +1211,8 @@ Address: %4
     </message>
     <message>
         <location line="+49"/>
-        <source>Open the Freicoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть отладочный файл Freicoin из текущего каталога. Это может занять несколько секунд для файлов большого размера.</translation>
+        <source>Open the Xcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть отладочный файл Xcoin из текущего каталога. Это может занять несколько секунд для файлов большого размера.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1226,8 +1226,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Freicoin-Qt help message to get a list with possible Freicoin command-line options.</source>
-        <translation>Показать окно помощи Freicoin-Qt для получения списка возможных параметров командной строки Freicoin.</translation>
+        <source>Show the Xcoin-Qt help message to get a list with possible Xcoin command-line options.</source>
+        <translation>Показать окно помощи Xcoin-Qt для получения списка возможных параметров командной строки Xcoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1256,8 +1256,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the Freicoin RPC console.</source>
-        <translation>Добро пожаловать в RPC консоль Freicoin.</translation>
+        <source>Welcome to the Xcoin RPC console.</source>
+        <translation>Добро пожаловать в RPC консоль Xcoin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1311,8 +1311,8 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 FRC</source>
-        <translation>123.456 FRC</translation>
+        <source>123.456 XCN</source>
+        <translation>123.456 XCN</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1445,8 +1445,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Введите адрес Freicoin (например 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Xcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Введите адрес Xcoin (например 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1511,8 +1511,8 @@ Address: %4
     </message>
     <message>
         <location line="+14"/>
-        <source>Sign the message to prove you own this Freicoin address</source>
-        <translation>Подписать сообщение для доказательства владения адресом Freicoin</translation>
+        <source>Sign the message to prove you own this Xcoin address</source>
+        <translation>Подписать сообщение для доказательства владения адресом Xcoin</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -1522,8 +1522,8 @@ Address: %4
     </message>
     <message>
         <location line="-20"/>
-        <source>Verify the message to ensure it was signed with the specified Freicoin address</source>
-        <translation>Проверить сообщение для удостоверения, что оно было подписано указанным адресом Freicoin</translation>
+        <source>Verify the message to ensure it was signed with the specified Xcoin address</source>
+        <translation>Проверить сообщение для удостоверения, что оно было подписано указанным адресом Xcoin</translation>
     </message>
     <message>
         <location line="-129"/>
@@ -1559,13 +1559,13 @@ Address: %4
     <message>
         <location line="-1"/>
         <location line="+3"/>
-        <source>Enter a Freicoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Введите адрес Freicoin (например. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Xcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Введите адрес Xcoin (например. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Enter Freicoin signature</source>
-        <translation>Введите подпись Freicoin</translation>
+        <source>Enter Xcoin signature</source>
+        <translation>Введите подпись Xcoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2152,13 +2152,13 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>freicoin-core</name>
+    <name>x-core</name>
     <message>
-        <location filename="../freicoinstrings.cpp" line="+9"/>
+        <location filename="../xstrings.cpp" line="+9"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=freicoinrpc
+rpcuser=xrpc
 rpcpassword=%s
 (you do not need to remember this password)
 If the file does not exist, create it with owner-readable-only file permissions.
@@ -2166,7 +2166,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
         <translation>%s, вы должны установить rpcpassword в конфигурационном файле:
  %s
 Рекомендуется использовать следующий случайный пароль:
-rpcuser=freicoinrpc
+rpcuser=xrpc
 rpcpassword=%s
 (вам не нужно его запоминать)
 Если файл не существует, создайте его с правом чтения только для владельца.
@@ -2189,8 +2189,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s.  Freicoin is probably already running.</source>
-        <translation>Невозможно создать блокировку на каталоге данных %s.  Freicoin возможно уже запущен.</translation>
+        <source>Cannot obtain a lock on data directory %s.  Xcoin is probably already running.</source>
+        <translation>Невозможно создать блокировку на каталоге данных %s.  Xcoin возможно уже запущен.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2234,8 +2234,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to bind to %s on this computer. Freicoin is probably already running.</source>
-        <translation>Невозможно привязаться к %s на этом компьютере. Freicoin возможно уже запущен.</translation>
+        <source>Unable to bind to %s on this computer. Xcoin is probably already running.</source>
+        <translation>Невозможно привязаться к %s на этом компьютере. Xcoin возможно уже запущен.</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2249,8 +2249,8 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Freicoin will not work properly.</source>
-        <translation>Предупреждение: пожалуйста проверьте, что время и дата на вашем компьютере выставлены правильно! Если ваши часы сбились, Freicoin не сможет корректно функционировать.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Xcoin will not work properly.</source>
+        <translation>Предупреждение: пожалуйста проверьте, что время и дата на вашем компьютере выставлены правильно! Если ваши часы сбились, Xcoin не сможет корректно функционировать.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2383,8 +2383,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Freicoin</source>
-        <translation>Ошибка загрузки wallet.dat: кошелек требует новую версию Freicoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Xcoin</source>
+        <translation>Ошибка загрузки wallet.dat: кошелек требует новую версию Xcoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2428,13 +2428,13 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Freicoin version</source>
-        <translation>Freicoin версии</translation>
+        <source>Xcoin version</source>
+        <translation>Xcoin версии</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Freicoin</source>
-        <translation>Freicoin</translation>
+        <source>Xcoin</source>
+        <translation>Xcoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2593,8 +2593,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or freicoind</source>
-        <translation>Отправить команду для -server или freicoind</translation>
+        <source>Send command to -server or xd</source>
+        <translation>Отправить команду для -server или xd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2658,8 +2658,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify configuration file (default: freicoin.conf)</source>
-        <translation>Указать файл конфигурации (по умолчанию: freicoin.conf)</translation>
+        <source>Specify configuration file (default: x.conf)</source>
+        <translation>Указать файл конфигурации (по умолчанию: x.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2673,8 +2673,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: freicoind.pid)</source>
-        <translation>Указать файл идентификатора процесса (по умолчанию: freicoind.pid)</translation>
+        <source>Specify pid file (default: xd.pid)</source>
+        <translation>Указать файл идентификатора процесса (по умолчанию: xd.pid)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2758,8 +2758,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Freicoin to complete</source>
-        <translation>Кошелек необходимо переписать: перезапустите Freicoin для завершения</translation>
+        <source>Wallet needed to be rewritten: restart Xcoin to complete</source>
+        <translation>Кошелек необходимо переписать: перезапустите Xcoin для завершения</translation>
     </message>
     <message>
         <location line="+1"/>

@@ -10,8 +10,8 @@ packages:
 reference_datetime: "2012-07-01 00:00:00"
 remotes: []
 files:
-- "Freicoin-Qt-i686-static-mingw32-0.0.2-2-gitian.zip"
-- "freicoind-i686-static-mingw32-0.0.2-2-gitian.zip"
+- "Xcoin-Qt-i686-static-mingw32-0.0.2-2-gitian.zip"
+- "xd-i686-static-mingw32-0.0.2-2-gitian.zip"
 - "src-local.tar.xz"
 script: |
   export ARCH=windows
@@ -21,27 +21,27 @@ script: |
   
   export GITIANDIR=`pwd`
   
-  FREICOIN_VER=0.0.2-2
+  XCOIN_VER=0.0.2-2
   
   export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
   export TZ=UTC
   export FAKETIME=$REFERENCE_DATETIME
   
-  mkdir -p "$PREFIX"/freicoin-${FREICOIN_VER}-${ARCH}
-  pushd "$PREFIX"/freicoin-${FREICOIN_VER}-${ARCH}
+  mkdir -p "$PREFIX"/x-${XCOIN_VER}-${ARCH}
+  pushd "$PREFIX"/x-${XCOIN_VER}-${ARCH}
 
   mkdir -p src
   tar -C src -xf "$GITIANDIR"/src-local.tar.xz
   cp -a src/doc/README_windows.txt ./README.txt
   cp -a src/COPYING ./COPYING.txt
-  unzip "$GITIANDIR"/freicoind-i686-static-mingw32-${FREICOIN_VER}-gitian.zip bin/freicoind.exe
+  unzip "$GITIANDIR"/xd-i686-static-mingw32-${XCOIN_VER}-gitian.zip bin/xd.exe
   mkdir -p daemon
-  mv bin/freicoind.exe daemon/
-  unzip "$GITIANDIR"/Freicoin-Qt-i686-static-mingw32-${FREICOIN_VER}-gitian.zip bin/Freicoin-Qt.exe
-  mv bin/Freicoin-Qt.exe ./
+  mv bin/xd.exe daemon/
+  unzip "$GITIANDIR"/Xcoin-Qt-i686-static-mingw32-${XCOIN_VER}-gitian.zip bin/Xcoin-Qt.exe
+  mv bin/Xcoin-Qt.exe ./
   rmdir bin
   
   cd ..
-  find freicoin-${FREICOIN_VER}-${ARCH} -not -type d -print0 | sort -z | xargs -0 \
-    zip -r "$OUTDIR"/freicoin-${FREICOIN_VER}-${ARCH}.zip
+  find x-${XCOIN_VER}-${ARCH} -not -type d -print0 | sort -z | xargs -0 \
+    zip -r "$OUTDIR"/x-${XCOIN_VER}-${ARCH}.zip
   popd

@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #include "ui_interface.h"
 #include "init.h"
-#include "freicoinrpc.h"
+#include "xrpc.h"
 
 #include <string>
 
@@ -22,7 +22,7 @@ static bool noui_ThreadSafeAskFee(const mpq& nFeeRequired, const std::string& st
 
 void noui_connect()
 {
-    // Connect freicoind signal handlers
+    // Connect xd signal handlers
     uiInterface.ThreadSafeMessageBox.connect(noui_ThreadSafeMessageBox);
     uiInterface.ThreadSafeAskFee.connect(noui_ThreadSafeAskFee);
 }
